@@ -1,0 +1,59 @@
+.landing{
+    background-image: url('/images/W1.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: 0 -10vh ;
+    overflow-x: hidden;
+}
+
+.logo_top{
+    margin-top:2vh !important ;
+}
+
+
+.text{
+    font-size: 0.3em;
+    font-family: 'Titillium Web';
+}
+
+.btn-update{
+    font-size: 1.5em;
+}
+h2{
+    color: white !important;
+    font-family: 'Montserrat' !important;
+    font-weight: bold;
+}
+.display-5{
+    font-size: 3.0em;
+    font-weight: bold;
+}
+
+/*RESPONSIVE BEHAVIOUR*/
+
+@media(max-width:768px){
+    .logo-text{
+        font-size: 1.5em !important;
+    }
+    .logo-subtext{
+        font-size: 0.9em !important;
+    }
+    .logo_top>img{
+        width: 250px !important;
+    }
+    .underLogo{
+        font-size: 1em;
+    }
+    .display-5{
+        font-size: 1.5em;
+    }
+
+    .landing{
+        height: 80vh ;
+        background-position: -10vh 0;
+    }
+    .btn-update{
+        font-size: 1em !important;
+        margin-top: 0vh !important;
+    }
+}
