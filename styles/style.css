@@ -28,6 +28,11 @@ h2{
     font-size: 3.0em;
     font-weight: bold;
 }
+.display-main{
+    font-size: 5.0em;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 /*RESPONSIVE BEHAVIOUR*/
 
