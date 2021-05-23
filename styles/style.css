@@ -1,69 +1,70 @@
-.landing{
-    background-image: url('/images/W1.jpg');
-    min-height: 100vh;
-    background-size: cover;
-    background-position: 0 -10vh ;
-    overflow-x: hidden;
+.landing {
+  background-image: url("/images/W1.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: 0 -10vh;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ipeclogo {
+  height: 150px;
+}
+.eventlogo {
+  height: 250px;
 }
 
-.logo_top{
-    margin-top:2vh !important ;
+.text {
+  font-size: 0.3em;
+  font-family: "Titillium Web";
 }
 
-
-.text{
-    font-size: 0.3em;
-    font-family: 'Titillium Web';
+.btn-update {
+  font-size: 1.5em;
 }
-
-.btn-update{
-    font-size: 1.5em;
+h2 {
+  color: white !important;
+  font-family: "Montserrat" !important;
+  font-weight: bold;
 }
-h2{
-    color: white !important;
-    font-family: 'Montserrat' !important;
-    font-weight: bold;
+.display-5 {
+  font-size: 2.5em;
+  font-weight: bold;
 }
-.display-5{
-    font-size: 2.5em;
-    font-weight: bold;
-}
-.display-main{
-    font-size: 4.0em;
-    font-weight: bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.display-main {
+  font-size: 4em;
+  font-weight: bold;
+  font-family: "Pattaya";
 }
 
 /*RESPONSIVE BEHAVIOUR*/
 
-@media(max-width:978px){
-    .logo-text{
-        font-size: 1.5em !important;
-    }
-    .logo-subtext{
-        font-size: 0.9em !important;
-    }
-    .logo_top>img{
-        width: 250px !important;
-    }
-    .underLogo{
-        font-size: 1em;
-    }
-    .display-5{
-        font-size: 1.5em;
-    }
-    .display-main{
-        font-size: 3.0em;
-    }
-    .img-md-fluid {
-        max-width: 100%; 
-    } 
-    .landing{
-        height: 80vh ;
-        background-position: -10vh 0;
-    }
-    .btn-update{
-        font-size: 1em !important;
-        margin-top: 0vh !important;
-    }
+@media (max-width: 978px) {
+  .logo-text {
+    font-size: 1.3em !important;
+  }
+  .logo-subtext {
+    font-size: 0.5em !important;
+  }
+  .ipeclogo {
+    height: 90px;
+  }
+  .eventlogo {
+    height: 140px;
+  }
+  .underLogo {
+    font-size: 1em;
+  }
+  .display-5 {
+    font-size: 1.8em;
+  }
+  .display-main {
+    font-size: 2em;
+  }
+  .btn-update {
+    font-size: 1em !important;
+    margin-top: 0vh !important;
+  }
 }
