@@ -25,11 +25,11 @@ h2{
     font-weight: bold;
 }
 .display-5{
-    font-size: 3.0em;
+    font-size: 2.5em;
     font-weight: bold;
 }
 .display-main{
-    font-size: 5.0em;
+    font-size: 4.0em;
     font-weight: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -51,6 +51,9 @@ h2{
     }
     .display-5{
         font-size: 1.5em;
+    }
+    .display-main{
+        font-size: 2.0em;
     }
 
     .landing{
