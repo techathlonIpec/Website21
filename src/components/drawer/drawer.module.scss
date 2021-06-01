@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+}
+
+.bars {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.linkContainer {
+  list-style: none;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.stylrem {
+  color: black;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.mainMenu {
+  display: flex;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1.2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.spacer {
+  margin-bottom: 1rem;
+}
+
+.buttonMain {
+  margin-left: 79%;
+  margin-top: -2rem;
+}
+.mainMenu .closeBtn {
+  cursor: pointer;
+  text-align: right;
+  padding: 0.5rem 1rem;
+  position: relative;
+  right: 0;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.linkContainer li {
+  margin-bottom: 1.3rem;
+}
+
+.routeLink {
+  padding: 10px;
+  width: 101%;
+  text-align: center;
+}
+
+.texts {
+  margin-left: 1.2rem;
+}
