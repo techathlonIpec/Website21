@@ -41,7 +41,7 @@ export default function Footer() {
                         <li><a href="http://facebook.com/ipectechathlon"><i className="fa fa-facebook-f" /></a></li>
                         <li><a href="mailto:techathlon@ipec.org.in"><i className="fa fa-envelope" /></a></li>
                     </ul>
-                    <p><a href="#">Back To Top</a></p>
+                    <p>Back To Top</p>
                 </div>
             </div>
             {/* flex containers end here */}
