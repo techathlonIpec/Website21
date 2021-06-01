@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+$year: #d82339;
+/* footer section style */
+footer {
+  background-color: #343434;
+  width: 100vw;
+}
+/* first section whih three flex  */
+
+.section1 {
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* container heading styles */
+.containerOne,
+.containerTwo,
+.containerThree h3 {
+  text-transform: uppercase;
+  font-family: "Roboto Mono", monospace;
+  color: #818186ea;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* flex container style */
+.containerOne,
+.containerTwo,
+.containerThree {
+  padding: 1rem;
+  flex: 1;
+}
+
+/* flex container one styling */
+
+.containerOne p {
+  color: white;
+  margin-top: 1rem;
+  text-align: left;
+  font-weight: bolder;
+  line-height: 2rem;
+}
+
+/* second flex container style */
+
+.containerTwo ul {
+  margin: 2rem 0rem;
+}
+
+.containerTwo li {
+  padding: 1rem 0rem;
+  list-style: none;
+  color: white;
+  font-size: 1.2 rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* third flex container style */
+.containerThree ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 35%;
+}
+.containerThree li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.containerThree a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.containerThree p {
+  margin-top: 2rem;
+}
+
+/* styling for mobile of section 1 */
+@media screen and (max-width: 768px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .containerTwo {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .containerOne {
+    width: 100%;
+  }
+  .containerThree {
+    width: 100%;
+  }
+}
+
+/* section-2 of footer */
+
+.section2 {
+  width: 100vw;
+  background-color: #272727;
+  text-align: center;
+  padding: 1.3rem;
+}
+
+.section2 p {
+  color: white;
+}
+.year {
+  color: $year;
+}

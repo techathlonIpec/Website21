@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/styles.scss";
 import Nav from "./components/navbar/navbar.jsx";
 import Home from "./components/home/home.jsx";
+import Footer from "./components/footer/footer.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -28,6 +29,7 @@ class App extends React.Component {
                 <Route path="/quickLinks" component={Home} />
               </div>
             </Switch>
+            <Footer />
           </div>
         </Router>
       </div>

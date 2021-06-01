@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Special+Elite&display=swap");
+$year: #d82339;
 
 * {
   margin: 0px;
@@ -33,7 +35,9 @@ nav {
 }
 
 .year {
-  color: coral;
+  color: $year;
+  font-family: "Special Elite", cursive;
+  font-size: 2.2rem;
   font-family: "Fira Sans", sans-serif;
 }
 
