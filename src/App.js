@@ -4,6 +4,7 @@ import Nav from "./components/navbar/navbar.jsx";
 import Home from "./components/home/home.jsx";
 import Footer from "./components/footer/footer.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import RegisterForms from "./components/register/register";
 
 class App extends React.Component {
   state = {};
@@ -25,7 +26,7 @@ class App extends React.Component {
                 <Route path="/advisory" component={Home} />
                 <Route path="/sponsers" component={Home} />
                 <Route path="/team" component={Home} />
-                <Route path="/registration" component={Home} />
+                <Route path="/registration" component={RegisterForms} />
                 <Route path="/quickLinks" component={Home} />
               </div>
             </Switch>
