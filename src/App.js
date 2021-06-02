@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/styles.scss";
 import Nav from "./components/navbar/navbar.jsx";
 import Home from "./components/home/home.jsx";
+import Registration from "./components/registration/registration.jsx";
 import Footer from "./components/footer/footer.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -25,7 +26,7 @@ class App extends React.Component {
                 <Route path="/advisory" component={Home} />
                 <Route path="/sponsers" component={Home} />
                 <Route path="/team" component={Home} />
-                <Route path="/registration" component={Home} />
+                <Route path="/registration" component={Registration} />
                 <Route path="/quickLinks" component={Home} />
               </div>
             </Switch>

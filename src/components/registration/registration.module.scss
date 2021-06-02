@@ -1,0 +1,42 @@
+$year: #d82339;
+
+.flexMain {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.gridMain {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 70%;
+  font-size: 5rem;
+  margin: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 4rem;
+}
+
+.mainContaint {
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.spanner {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  color: $year;
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.links {
+  text-decoration: none;
+}
