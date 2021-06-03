@@ -4,7 +4,8 @@ import Nav from "./components/navbar/navbar.jsx";
 import Home from "./components/home/home.jsx";
 import Registration from "./components/registration/registration.jsx";
 import Footer from "./components/footer/footer.jsx";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { AnimatedSwitch } from "react-router-transition";
 
 class App extends React.Component {
   state = {};
@@ -18,8 +19,14 @@ class App extends React.Component {
           </div>
 
           <div>
-            <Switch>
+            <AnimatedSwitch
+              atEnter={{ opacity: 0, transition: "20ms ease-in" }}
+              atLeave={{ opacity: 0 }}
+              atActive={{ opacity: 1 }}
+              className="switch-wrapper"
+            >
               <Route path="/" exact component={Home} />
+
               <div>
                 <Route path="/about" component={Home} />
                 <Route path="/events" component={Home} />
@@ -29,7 +36,7 @@ class App extends React.Component {
                 <Route path="/registration" component={Registration} />
                 <Route path="/quickLinks" component={Home} />
               </div>
-            </Switch>
+            </AnimatedSwitch>
             <Footer />
           </div>
         </Router>

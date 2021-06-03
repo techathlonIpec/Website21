@@ -7,6 +7,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Tilt from "react-tilt";
 
 const useStyles = makeStyles({
     root: {
@@ -55,26 +56,28 @@ export default function Registration() {
                 {
                     techlathon.map((items, index) => {
                         return (
-                            <Card className={classes.root} key={index}>
-                                <CardContent>
-                                    <Typography variant="h5" component="h2">
-                                        <span className={styles.spanner}>{items.name}</span>
-                                    </Typography>
-                                    <Typography className={classes.pos} color="textSecondary">
-                                        adjective
+                            <Tilt>
+                                <Card className={classes.root} key={index}>
+                                    <CardContent>
+                                        <Typography variant="h5" component="h2">
+                                            <span className={styles.spanner}>{items.name}</span>
+                                        </Typography>
+                                        <Typography className={classes.pos} color="textSecondary">
+                                            adjective
                               </Typography>
-                                    <Typography variant="body2" component="p">
-                                        well meaning and kindly.
+                                        <Typography variant="body2" component="p">
+                                            well meaning and kindly.
                                 <br />
-                                        {'"a benevolent smile"'}
-                                    </Typography>
-                                </CardContent>
-                                <CardActions>
-                                    <Link to={items.route} className={styles.links}>
-                                        <Button size="medium" className={styles.button}>Register &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></Button>
-                                    </Link>
-                                </CardActions>
-                            </Card>
+                                            {'"a benevolent smile"'}
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions>
+                                        <Link to={items.route} className={styles.links}>
+                                            <Button size="medium" className={styles.button}>Register &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></Button>
+                                        </Link>
+                                    </CardActions>
+                                </Card>
+                            </Tilt>
                         );
                     })
                 }
