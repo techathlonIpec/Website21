@@ -14,10 +14,10 @@
   flex-direction: column;
 }
 .ipeclogo {
-  height: 150px;
+  height: 190px;
 }
 .eventlogo {
-  height: 250px;
+  height: 200px;
 }
 
 .text {
@@ -199,10 +199,10 @@ h2 {
     font-size: 0.5em !important;
   }
   .ipeclogo {
-    height: 90px;
+    height: 120px;
   }
   .eventlogo {
-    height: 140px;
+    height: 130px;
   }
   .underLogo {
     font-size: 1em;
