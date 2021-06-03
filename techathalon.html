@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/techathalon.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -15,7 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="icon" href="./images/MainLogo.png" size="10x10">
-
+   
 </head>
 
 <!-- ------------------------------ header serction---------------------------------------------------------- -->
@@ -33,11 +34,11 @@
             <div class="links">
                 <!-- links in nav bar as well as in drawer -->
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Advisory Commmittee</a></li>
-                <li><a href="#">Sponsors</a></li>
-                <li><a href="#">Our Team</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#advisoryCommittee">Advisory Commmittee</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#ourTeam">Our Team</a></li>
                 <li><a href="#quickLinks">Quick links</a></li>
             </div>
 
@@ -58,11 +59,171 @@
 <!-- ------------------------------ body section ---------------------------------------------------------- -->
 
 <body>
-    <div class="main">
-        <img src="https://images.unsplash.com/photo-1601933470096-0e34634ffcde?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-            alt="sudo" class="image">
+    <!--main -->
+    <div class="landing-main" style="padding-left: 10%; padding-top: 5%;">
+        <div class="logo_top">
+            <img src="./images/ipec.png" style="height: 8em;" class="logo1" alt="" data-aos="fade-up" data-aos-delay="500" srcset="">
+            <img src="./images/MainLogo.png" style="height: 8em; margin-left: 1em;" class="Mainlogo" alt="" data-aos="fade-up" data-aos-delay="500" srcset="">
+            <div class="text-danger logo-text" alt="" data-aos="fade-up" data-aos-delay="500"
+                style="color: white !important; font-size: 2rem; font-weight: bolder;">
+                INDERPRASTHA ENGINEERING COLLEGE
+             </div> <br>
+            <h2 class="text-danger logo-text" alt="" data-aos="fade-up" data-aos-delay="500"
+                style="color: white !important; font-size: 1.5rem;">
+                Department of Computer Science &  Enginnering and<br>
+                Information Technology 
+            </h2>
+            <div class="text-danger underLogo" alt="" data-aos="fade-up" data-aos-delay="500"
+            style="color: rgb(201, 35, 35) !important; font-size: 18px; margin-top: 2%; font-weight: bold;">
+            Presents Inter College
+            </div>
+            <div class="display-main text-danger" alt="" data-aos="fade-up" data-aos-delay="500" 
+            style="font-size: 6em; padding-top: 5px; color:#e81f37">
+                Techathlon'21
+            </div>
+            <div class="text-danger logo-text" alt="" data-aos="fade-down" data-aos-delay="500"
+            style="color: silver !important; font-size: 2rem;">
+            </div>
+            <div class="text-danger logo-text" alt="" data-aos="fade-down" data-aos-delay="500"
+            style="font-weight:inherit; font-size: 2.5em;  margin-top: 2%; color: white;">
+            25th-26th June <br>
+                <a><button class="button buttonMore"> Know More </button></a>
+                <div class="dropdown">
+                    <button class="button dropbtn">Register Now</button>
+                </div>
+            </div>
+        </div>    
     </div>
-    <script src="./js/techathalon.js" async defer></script>
+
+    <!-- ----------------------------------------------- About US--------------------------------------------------->
+    <div class="about" id="about">
+        <div>
+            <div class="flex-container">
+                <div class="flex-item-left">About <br> The Event</div>
+                <div class="flex-item-right">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was 
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and 
+                    more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+              </div>
+              
+        </div>
+    </div>
+
+    
+    <!------------------------Event---------------------------------------------------------->
+    <div class="Event" id="Events">
+        <div style="background-color:midnightblue;">
+            <class EventsDeatils style="color: mintcream;">
+                <div class="flex-container">
+                    <div class="flex-item-left">Events</div>
+
+                    <div class="flex-item-right">
+                        <div> Hackathon</div>
+                        <div>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+                            took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                        <div> Innovazia</div>
+                        <div>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+                            took a galley of type and scrambled it to make a type specimen book. 
+                        </div>
+                    </div>
+                <div>        
+            </class>
+        </div>  
+    </div>
+
+    <!------------------------Advisory---------------------------------------------------------->
+    <div class="Advisory" id="Advisory">
+        <div style="background-color:rgb(199, 199, 219);">
+            <table style="padding-top: 5%; padding-left: 10%; align-items: center; width: 80%;">
+                <tr>
+                    <th colspan="2">
+                        Director
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Vijai Singh
+                    </td>
+                    <td>
+                        Pooja Tripathi
+                    </td>
+                </tr>    
+                <tr>
+                    <td>
+                        Diksha Dani
+                    </td>
+                    <td>
+                        Pranshu Saxena
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Chahat Sharma
+                    </td>
+                    <td>
+                        Tripti Sharma
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Kumud Alok
+                    </td>
+                    <td>
+                        Prachi
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sneha Prabha
+                    </td>
+                    <td>
+                        Abhilasha
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Bindu Rani
+                    </td>
+                    <td>
+                        ABCD
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ABCD
+                    </td>
+                    <td>
+                        ABCD
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!------------------------Sponsors---------------------------------------------------------->
+    <div class="Sponsors" id="Sponsors">
+        <div class="flex-container">
+            <div class="flex-item-left">Sponsors</div>
+            <div class="flex-item-right">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+                took a galley of type and scrambled it to make a type specimen book. 
+            </div>
+        <div>
+            <button class="button buttonSpon"> <a href="mailto:techathlon@ipec.org.in>" > 
+                Be a Sponsor</a></button>
+            </class>
+        </div>
+    </div>
+    <!------------------------Our Teams---------------------------------------------------------->
+
 
 </body>
 <!-- ------------------------------ body section ---------------------------------------------------------- -->

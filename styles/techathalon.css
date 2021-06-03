@@ -14,9 +14,10 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  min-height: 15vh;
   position: fixed;
   top: 0;
+  z-index: 9;
   width: 100vw;
   background-color: #343a40;
 }
@@ -26,11 +27,11 @@ nav {
 .logo {
   color: white;
   letter-spacing: 3px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .year {
-  color: coral;
+  color:#e81f37;
 }
 
 /* links that are placed on the navigation bar */
@@ -47,7 +48,7 @@ nav {
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .nav-links li {
   list-style: none;
