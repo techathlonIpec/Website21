@@ -31,63 +31,91 @@ header {
   z-index: 400;
 }
 
-header nav {
-  height: 100px;
-  width: 100%;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
   position: fixed;
-  overflow: hidden;
-  background-color: #f2ebd8;
+  top: 0;
   z-index: 900;
+  width: 100vw;
+  background-color: #f2ebd8;
+}
+.logo {
+  color: white;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
 }
 
-header nav #logo {
+.year {
+  color: coral;
+}
+
+/* links that are placed on the navigation bar */
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 55%;
+}
+
+/* navlink styling */
+.nav-links a {
+  color: black;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  /* font-size: 0.7rem; */
+}
+
+.nav-links a:hover {
+  color: #ff4157;
+}
+.nav-links li {
+  list-style: none;
+}
+
+/* toggle button for drawer */
+
+.bars {
+  display: none;
+}
+
+.bars div {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  border-radius: 25px;
+  margin: 5px;
+}
+/* close button */
+.cross {
+  display: none;
+}
+
+/* pushing down link */
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+header nav .logo {
   height: 100%;
-  margin-left: 8%;
+
   display: inline-block;
   padding: 20px 0px;
 }
 
-header nav #logo img {
+header nav .logo img {
   height: 50px;
 }
 
-header nav #menu {
-  float: right;
-  height: 100%;
-  list-style: none;
-  text-align: right;
-  text-transform: uppercase;
-  position: relative;
-  right: 8%;
-}
-
-header nav #menu li {
-  display: inline-block;
-  position: relative;
-  margin: 0 20px;
-  box-sizing: border-box;
-  margin-top: 40px;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-header nav #menu li:after {
-  position: absolute;
-  top: -13px;
-  right: 51%;
-  display: block;
-  width: 1px;
-  height: 0;
-  background-color: #ff4157;
-  content: "";
-  /* transform: rotateZ(90deg); */
-  transition: height 0.2s;
-}
-header nav #menu li:hover:after {
-  height: 48px;
-}
-header nav #menu li:hover {
-  color: #ff4157;
-}
+/* work from here  */
 
 header #hero-text {
   position: absolute;
