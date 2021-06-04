@@ -52,6 +52,7 @@
     #events{
         height: 90vh;
     }
+    
     .split > h1{
         font-size: 14px;
         padding: 10px 15px;
@@ -59,6 +60,18 @@
     .split > .button > .btn-readMore{
         font-size: 14px;
         padding: 5px 10px;
+    }
+    #advisoryCommittee{
+        padding: 50px 0px;
+    }
+    .section-title{
+        font-size: 20px;
+    }
+    .section-title::before{
+        width: 150px;
+    }
+    .card-container {
+        padding: 0px;
     }
 
     .front{

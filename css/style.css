@@ -384,3 +384,9 @@ header #scroll {
     transform: scale(1.15);
 }
 /* ADVISORY COMMITTEE ENDS HERE */
+
+/* Our team */
+#ourTeam{
+	height: 70vh;
+	background-color: #000;
+}
