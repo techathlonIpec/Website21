@@ -5,9 +5,9 @@
 		padding: 0;
 		font-family: Open Sans, sans-serif!important;
 }
-body {
-		min-width: 550px
 
+body {
+		width: 100%;
 }
 
 
@@ -107,21 +107,16 @@ header #hero-text {
 }
 
 header #hero-text h1 {
-		height: 100px;
 		font-size: 70px;
    		 font-weight:100;
-		line-height: 70px;
 }
 
 
 header #hero-text p {
-		height: 50px;
-		line-height: 1;
 		font-size: 35px;
 }
 header #hero-text .hero-small{
 	font-size: 25px;
-	height: 30px;
 }
 
 header #hero-text h1,
@@ -219,8 +214,6 @@ header #scroll {
 		text-align: center;
 		font-size: 20px;
 		font-weight: 600;
-		line-height: 50px;
-		padding: 10px;
 		text-transform: uppercase;
 		cursor: pointer;
 		z-index: 100;
@@ -336,37 +329,6 @@ header #scroll {
   .hover-right .left:before {
 	z-index: 2;
   }
-  
-  @media(max-width: 800px) {
-	h1 {
-	  font-size: 2rem;
-	}
-  
-	.button {
-	  width: 12rem;
-	}
-  }
-  
-  @media(max-height: 700px) {
-	.button {
-	  top: 70%;
-	}
-  }
-
   /* Event CSS ends here */
 
-
-@media only screen and (max-width: 1000px) {
- 
-  .row {
-    height:1500px!important;
-  }
-  .photo-item{
-    width:100%!important;
-  }
-  .photo-item > img {
-    max-width:100%!important;
-    width:100%!important;
-  }
-}
 

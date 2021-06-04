@@ -1,0 +1,63 @@
+@media (max-width: 968px) {
+ 
+    .row {
+      height:1500px!important;
+    }
+    .photo-item{
+      width:100%!important;
+    }
+    .photo-item > img {
+      max-width:100%!important;
+      width:100%!important;
+    }
+  
+    #hero-text> img{
+        height: 75px !important;
+    }
+  
+    header #hero-text{
+        margin-top: -150px;
+    }
+  
+    header #hero-text h1{
+        font-size: 30px;
+    }
+    header #hero-text p{
+        font-size: 20px;
+    }
+    header #hero-text .hero-small{
+        font-size: 15px;
+    }
+    header #hero-text .hero-medium{
+        font-size: 18px;
+        margin: auto 2%;
+    }
+    #content .info {
+		background: white;
+		padding: 70px 0 10px 0;
+    }
+    #content .info > p:first-child{
+        font-size: 20px;
+    }
+    #content .info > p:nth-child(2){
+        font-size: 14px;
+        padding: 0px 10px;
+    }
+    #content .button{
+        max-width: 100px;
+        margin: 30px auto;
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    #events{
+        height: 70vh;
+    }
+    .split > h1{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .split > .button > .btn-readMore{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+  }
