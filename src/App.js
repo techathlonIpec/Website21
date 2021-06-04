@@ -6,6 +6,8 @@ import Registration from "./components/registration/registration.jsx";
 import Footer from "./components/footer/footer.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import RegisterForms from "./components/register/register";
+// import 'antd/dist/antd.css';
+
 
 class App extends React.Component {
   state = {};

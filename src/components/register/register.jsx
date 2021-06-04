@@ -7,6 +7,6 @@ import Vividly from "./forms/vividly"
 
 export default function RegisterForms() {
     return (
-        <Vividly />
+        <Infomaze />
     )
 }
