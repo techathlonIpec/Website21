@@ -3,10 +3,16 @@ import "./styles/styles.scss";
 import Nav from "./components/navbar/navbar.jsx";
 import Home from "./components/home/home.jsx";
 import Registration from "./components/registration/registration.jsx";
+import CTF from "./components/register/forms/CTF.jsx";
+import Hackathon from "./components/register/forms/hackathon.jsx";
+import Infomaze from "./components/register/forms/infomaze.jsx";
+import SpeciaWar from "./components/register/forms/speciawar.jsx";
+import Vividly from "./components/register/forms/vividly.jsx";
 import Footer from "./components/footer/footer.jsx";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import RegisterForms from "./components/register/register";
-// import 'antd/dist/antd.css';
+
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { AnimatedSwitch } from "react-router-transition";
 
 
 class App extends React.Component {
@@ -21,20 +27,29 @@ class App extends React.Component {
           </div>
 
           <div>
-            <Switch>
+            <AnimatedSwitch
+              atEnter={{ opacity: 0, transition: "20ms ease-in" }}
+              atLeave={{ opacity: 0 }}
+              atActive={{ opacity: 1 }}
+              className="switch-wrapper"
+            >
               <Route path="/" exact component={Home} />
+
               <div>
                 <Route path="/about" component={Home} />
                 <Route path="/events" component={Home} />
                 <Route path="/advisory" component={Home} />
                 <Route path="/sponsers" component={Home} />
                 <Route path="/team" component={Home} />
-
-                <Route path="/registration" component={RegisterForms} />
-                
+                <Route path="/registration" component={Registration} />
                 <Route path="/quickLinks" component={Home} />
+                <Route path="/hackathon" component={Hackathon} />
+                <Route path="/ctf" component={CTF} />
+                <Route path="/informaze" component={Infomaze} />
+                <Route path="/speciaWar" component={SpeciaWar} />
+                <Route path="/vividly" component={Vividly} />
               </div>
-            </Switch>
+            </AnimatedSwitch>
             <Footer />
           </div>
         </Router>

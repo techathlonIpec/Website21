@@ -235,12 +235,11 @@ export default function Hachathon() {
                              </div>}
 
                         </QueueAnim>
-
-                        <br /><br />
+                            <br /><br />
                         </div>
-                </Row>
-            </div>
-        </Col>
-    </Row>
+                    </Row>
+                </div>
+            </Col>
+        </Row>
     )
 }
