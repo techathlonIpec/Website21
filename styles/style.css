@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+
 .landing {
   background-image: url("/images/W1.jpg");
   height: 100vh;
@@ -10,10 +14,10 @@
   flex-direction: column;
 }
 .ipeclogo {
-  height: 150px;
+  height: 190px;
 }
 .eventlogo {
-  height: 250px;
+  height: 200px;
 }
 
 .text {
@@ -39,6 +43,152 @@ h2 {
   font-family: "Pattaya";
 }
 
+/*MAIN PAGE*/
+.landing-main {
+  background-color: grey;
+  height: 110vh;
+  background-size:cover;
+  background-position:center;
+  overflow-x: hidden;
+  display:grid;
+  justify-content: left;
+  align-items:baseline;
+  flex-direction: column;
+  font-family: "Fira Sans", sans-serif;
+}
+.logo1 {
+  height: 150px;
+}
+.Mainlogo {
+  height: 200px;
+}
+.button {
+  background-color: #e81f37; /* Green */
+  border: 2px solid #e81f37;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.buttonMore:hover {
+  background-color: transparent;
+
+  color: #e81f37;
+  
+}
+
+.buttonSpon {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+  justify-content: center;
+}
+
+.buttonSpon:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: #e81f37;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid #e81f37;
+}
+.dropbtn:hover{
+  color: white;
+  background-color: #e81f37;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 180px;
+  font-size:large;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border:orchid;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.Sponsors {
+  background-image: url("/images/W1.jpg");
+  height:unset;
+  background-position:center;
+  background-size: auto;
+  overflow-x: hidden;
+  display:grid;
+  justify-content: left;
+  align-items:baseline;
+  flex-direction: column;
+  font-family: "Fira Sans", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+/* About US */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+  background-image: url("/images/W1.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.flex-item-left {
+  padding-left: 5%;
+  padding-top: 5%;
+  flex: 30%;
+  font-family: "Fira Sans", sans-serif;
+  color: aliceblue;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.flex-item-right {
+  flex: 70%;
+  font-family: "Fira Sans", sans-serif;
+  color: aqua;
+  text-align: justify;
+  padding-right: 5%;
+  padding-top: 10%;
+}
+
+
 /*RESPONSIVE BEHAVIOUR*/
 
 @media (max-width: 978px) {
@@ -49,10 +199,10 @@ h2 {
     font-size: 0.5em !important;
   }
   .ipeclogo {
-    height: 90px;
+    height: 120px;
   }
   .eventlogo {
-    height: 140px;
+    height: 130px;
   }
   .underLogo {
     font-size: 1em;
