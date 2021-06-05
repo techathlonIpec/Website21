@@ -25,12 +25,12 @@
         <div class="links">
           <!-- links in nav bar as well as in drawer -->
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Advisory Commmittee</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#advisoryCommittee">Advisory Commmittee</a></li>
           <li><a href="#">Sponsors</a></li>
           <li><a href="#">Our Team</a></li>
           <li><a href="#quickLinks">Quick links</a></li>
+          <li><a href="#open-modal">Register Now</a></li>
         </div>
 
       </ul>
@@ -40,6 +40,8 @@
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
+      <!--  -->
+
 
     </nav>
     <div id="hero-text">
@@ -53,7 +55,7 @@
       <h1>Techathlon '21</h1>
       <p class="hero-medium">Yes it is Finally here. Scroll Down to know more.</p>
     </div>
-    <div id="scroll"></div>
+    <a href="#content"><div id="scroll"></div></a>
   </header>
   <div id="content">
     <section class="info">
@@ -63,17 +65,13 @@
         consectetur magnam, perspiciatis veniam animi optio nesciunt praesentium explicabo voluptatem error nihil
         doloribus quod! Quaerat!
       </p>
-
-      <div class="button">
-        <p>Know more</p>
-      </div>
     </section>
   </div>
   <div id="events">
     <div class="container">
       <div class="split left">
         <h1>Hackathon</h1>
-        <a href="#" class="button">
+        <a href="/hackathon" class="button">
           <button class="btn-readMore">Read More</button>
         </a>
       </div>
@@ -210,6 +208,21 @@
   <div id="ourTeam">
 
   </div>
+
+
+
+
+  <!-- MODALS -->
+  <div id="open-modal" class="modal-window">
+    <div>
+      <a href="#" title="Close" class="modal-close">Close</a>
+      <h1>Voilà!</h1>
+      <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+      <div><small>Check out</small></div>
+      <a href="https://aminoeditor.com" target="_blank">👉 Amino: Live CSS Editor for Chrome</div>
+      </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>

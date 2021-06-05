@@ -19,20 +19,17 @@ right.addEventListener("mouseleave", () => {
   container.classList.remove("hover-right");
 });
 
-const slidingIntoHerDms = () => {
-  const bars = document.querySelector(".bars");
-  const nav = document.querySelector(".nav-links");
-  const cross = document.querySelector(".cross");
+(()=>{const bars = document.querySelector(".bars");
+const nav = document.querySelector(".nav-links");
+const cross = document.querySelector(".cross");
 
-  bars.addEventListener("click", () => {
-    nav.classList.remove("nav-smooth");
-    nav.classList.add("nav-active");
-  });
+bars.addEventListener("click", () => {
+  nav.classList.remove("nav-smooth");
+  nav.classList.add("nav-active");
+});
 
-  cross.addEventListener("click", () => {
-    nav.classList.remove("nav-active");
-    nav.classList.toggle("nav-smooth");
-  });
-};
-
-slidingIntoHerDms();
+cross.addEventListener("click", () => {
+  nav.classList.remove("nav-active");
+  nav.classList.toggle("nav-smooth");
+});})()
+  

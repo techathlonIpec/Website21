@@ -15,7 +15,7 @@
   }
 
   header #hero-text {
-    margin-top: -150px;
+    height: 100vh;
   }
 
   header #hero-text h1 {
@@ -29,7 +29,6 @@
   }
   header #hero-text .hero-medium {
     font-size: 18px;
-    margin: auto 2%;
   }
   #content .info {
     background: white;
@@ -131,14 +130,13 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
+  .nav-active {
+    transition: transform 0.5s ease-in;
+    transform: translateX(0%);
+  }
+
+  .nav-smooth {
+    transform: translateX(-106%);
+  }
 }
 
-.nav-active {
-  transition: transform 0.5s ease-in;
-  transform: translateX(0%);
-}
-
-.nav-smooth {
-  transition: transform 0.5s ease-out;
-  transform: translateX(-106%);
-}
