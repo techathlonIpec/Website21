@@ -417,12 +417,21 @@ header #scroll {
 }
 /* ADVISORY COMMITTEE ENDS HERE */
 
+
+/* Im Working here */
+
 /* Our team */
 #ourTeam {
   height: 70vh;
-  background-color: #000;
+}
+.teamFlex{
+  margin-top: -40px;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
+/* I worked here */
 
 /* Modal CSS */
 
