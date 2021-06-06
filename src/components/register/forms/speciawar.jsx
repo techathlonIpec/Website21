@@ -14,11 +14,13 @@ export default function SpeciaWar() {
    const [contact,setContact] = useState("");
    const [transNumber,setTransNumber] = useState("");
    const [error, setError] = useState(false)
-
+   const [success, setSuccess] = useState(false)
+   const [loading, setLoading] = useState(false)
+   const [apiMessage, setApiMessage]= useState('')
 
    
    const SubmitHandler = () =>{
-   
+    setLoading(true)
     const data = {
         teamName,
             sizeOfTeam: teamSize,
@@ -28,24 +30,22 @@ export default function SpeciaWar() {
             transactionId:transNumber
     }
 
-   const showError = (error)=>{
-    setError(error)
-    // To remove error after 3 sec 
-    setTimeout(()=>{
-        setError(false)
-    }, 3000)
-   }
-    
-
     axios.post("https://techathlon21.herokuapp.com/registerSpeciaWar",data).then(response => {
-        console.log(response);
 
         if(!response.data.done){
-            console.log("helo")
-            showError(response.data.error.details[0].message)
+            setApiMessage(response.data.error.details[0].message)
+            setError(true)
+            setSuccess(false)
+            setLoading(false)
+        }  
+        else {
+            setApiMessage('Your Registration has been recieved. Kindly check your email.')
+            setError(false)
+            setSuccess(true)
+            setLoading(false)
 
-        }   
-    }).catch(e => console.log(e.details ,"error"))
+        } 
+    }).catch(e => { console.log(e.details ,"error"); setLoading(false)})
 } 
 
 
@@ -160,6 +160,11 @@ export default function SpeciaWar() {
 
     return (
         <Row justify="center" >
+        {loading?(<div className={classes.loading}>
+        <div className={classes.uil_ring_css} style={{transform: 'scale(0.79)'}}>
+          <div />
+        </div>
+            </div>): ''}
         <Col lg={8} sm={16} xs={23}>
             <div className={classes.body}>
                 <Row className={classes.formBox}>
@@ -168,7 +173,12 @@ export default function SpeciaWar() {
                         <h3 className={classes.headerText}>Register for Specia War</h3>
                         <img src={gamer} className={classes.headerImage} alt="Gamer" />
                     </div>
-
+                    {error? (<div className={classes.errorMessage}>
+                        {apiMessage}
+                    </div>): ''}
+                    {success? (<div className={classes.successMessage}>
+                        {apiMessage}
+                    </div>): ''}
                 {/* animation */}
                 <div className={classes.fieldsBox}>
                     <QueueAnim delay={300} className="queue-simple">
@@ -229,10 +239,6 @@ export default function SpeciaWar() {
                             />
                         </div>
                         <Button onClick={()=> SubmitHandler()} key = 'z' block className={classes.Button} >Register Now</Button>
-                        {error && <div className={classes.errorNotification}>
-                             <p style={{color:"white", fontSize:"13px",flexWrap: "wrap",margin:'0 6px'}}>{error}</p>
-                             <p style={{color:"white",zIndex:"10", cursor:"pointer"}} onClick={()=>setError(false)} >X</p>
-                             </div>}
                         </QueueAnim>
 
                         <br /><br />
