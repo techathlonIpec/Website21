@@ -438,7 +438,20 @@ header #scroll {
 
 
 /*Events Innovazia*/
+#speciawar{
+  background-color: #f2ebd8;
+  height: fit-content;
+}
 
+#ctf{
+  background-color: #f2ebd8;
+  height: fit-content;
+}
+
+#prizes{
+  background-color: #f2ebd8;
+  height: fit-content;
+}
 
 
 
@@ -449,7 +462,7 @@ header #scroll {
 #timelineHead {
   margin-top: 10px;
   text-align: center;
-  background: #e3e3e3;
+  background: #f2ebd8;
 }
 /* Timeline */
 .timeline {
@@ -498,7 +511,7 @@ header #scroll {
 }
 .timeline .event:before {
   left: -217.5px;
-  color: #717171;
+  color: #f2ebd8;
   content: attr(data-date);
   text-align: right;
   font-weight: 400;
@@ -542,13 +555,12 @@ header #scroll {
 /* footer section style */
 footer {
   background-color: #343434;
-  width: 100vw;
+  width: 100%;
 }
 /* first section whih three flex  */
 
 .section1 {
   color: white;
-  padding: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
