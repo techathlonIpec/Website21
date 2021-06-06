@@ -231,7 +231,7 @@ header #scroll {
   padding: 0 100px;
 }
 
-#content .button {
+.button {
   position: relative;
   padding: 20px 50px;
   max-width: 200px;
@@ -246,11 +246,11 @@ header #scroll {
   z-index: 100;
 }
 
-#content .button:hover {
+.button:hover {
   color: white;
 }
 
-#content .button::before {
+.button::before {
   position: absolute;
   content: "";
   top: 0;
@@ -263,7 +263,7 @@ header #scroll {
   transition: width 0.2s;
 }
 
-#content .button:hover:before {
+.button:hover:before {
   width: 100%;
 }
 /* Event Section CSS */
@@ -368,6 +368,10 @@ header #scroll {
   text-align: center;
 }
 
+#schedule{
+  text-align: center;
+}
+
 .section-title {
   font-size: 40px;
   position: relative;
@@ -432,6 +436,12 @@ header #scroll {
   position: relative;
 }
 
+
+/*Events Innovazia*/
+
+
+
+
 /* I worked here */
 
 
@@ -459,6 +469,7 @@ header #scroll {
   text-align: left;
   font-weight: 1;
   max-width: 50%;
+  height: fit-content;
 }
 .timeline h1,
 .timeline h2,
