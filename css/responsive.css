@@ -1,4 +1,4 @@
-@media (max-width: 968px) {
+@media (max-width: 1050px) {
   .row {
     height: 1500px !important;
   }
@@ -32,7 +32,7 @@
   }
   #content .info {
     background: white;
-    padding: 70px 0 10px 0;
+    padding: 70px 0 70px 0;
   }
   #content .info > p:first-child {
     font-size: 20px;
@@ -55,12 +55,13 @@
     font-size: 14px;
     padding: 10px 15px;
   }
-  .split > .button > .btn-readMore {
+  .btn-readMore {
     font-size: 14px;
+    margin: 20px auto;
     padding: 5px 10px;
   }
   #advisoryCommittee {
-    padding: 50px 0px;
+    padding: 100px 0px;
   }
   .section-title {
     font-size: 20px;
@@ -77,9 +78,22 @@
     padding: 10px 20px;
     margin: 5px;
   }
+
+  /* TEAM CARDS */
+  .card{
+    width: 250px;
+    height: 300px;
+  }
+  .card h2,.card h2>small{
+    font-size: 20px !important;
+  }
+  .card cite{
+    font-size: 13px;
+    padding: 10px;
+  }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1050px) {
   .nav-links {
     display: flex;
     justify-content: space-around;
@@ -88,7 +102,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1050px) {
   /* navlinks restyling and drawer style */
   .nav-links {
     position: absolute;
@@ -103,6 +117,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    margin: 0px 0px;
     transform: translateX(-106%);
   }
   .nav-links li {
@@ -118,6 +133,7 @@
   .bars {
     display: block;
     cursor: pointer;
+    margin-right: 70px !important;
   }
   .cross {
     display: block;

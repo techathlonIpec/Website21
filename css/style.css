@@ -19,9 +19,9 @@ body {
   --left-button-hover-color: rgba(161, 11, 11, 0.3);
   --right-bg-color: rgba(43, 43, 43, 0.8);
   --right-button-hover-color: rgba(92, 92, 92, 0.3);
-  --hover-width: 75%;
-  --other-width: 25%;
-  --speed: 1000ms;
+  --hover-width: 70%;
+  --other-width: 30%;
+  --speed: 500ms;
 }
 
 /* work from here  */
@@ -36,19 +36,20 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 10vh;
   position: fixed;
+  flex-shrink: 1;
   top: 0;
   z-index: 900;
-  width: 100vw;
+  width: 100%;
   background-color: #f2ebd8;
 }
 .logo {
   color: white;
   letter-spacing: 3px;
-  font-size: 1.2rem;
+  margin: 0px 40px;
 }
 
 .year {
@@ -60,13 +61,14 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 55%;
+  width: 65%;
+  margin: 0px 40px;
 }
 
 /* navlink styling */
 .nav-links a {
   color: black;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
@@ -123,12 +125,11 @@ header nav .logo img {
 header #hero-text {
   text-align: center;
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 50%;
   /* margin-top: -150px; */
 }
 
@@ -193,14 +194,12 @@ header #scroll {
 }
 
 #content {
-  z-index: 300;
-  position: relative;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
 #content .info {
   background: white;
-  padding: 100px 0 75px 0;
+  padding: 100px 0 100px 0;
 }
 
 #content .info > p:first-child {
@@ -231,12 +230,12 @@ header #scroll {
   padding: 0 100px;
 }
 
-.button {
+.btn-readMore {
   position: relative;
-  padding: 20px 50px;
-  max-width: 200px;
-  border: 2px solid #ff4157;
+  background-color: transparent;
   color: #ff4157;
+  border: 2px solid #ff4157;
+  padding: 20px 30px;
   margin: 75px auto;
   text-align: center;
   font-size: 20px;
@@ -246,8 +245,10 @@ header #scroll {
   z-index: 100;
 }
 
-.button:hover {
+.btn-readMore:hover {
   color: white;
+  background-color: #ff4157;
+  transition: 0.3s;
 }
 
 .button::before {
@@ -291,7 +292,7 @@ header #scroll {
   font-size: 65px;
   background-color: #fff;
 }
-.split > .button > .btn-readMore {
+.split >  .btn-readMore {
   margin-top: 20px;
   font-size: 30px;
   padding: 10px 20px;
@@ -300,7 +301,7 @@ header #scroll {
   border: 2px solid #ff4157;
   cursor: pointer;
 }
-.split > .button > .btn-readMore:hover {
+.split >  .btn-readMore:hover {
   background-color: #ff4157;
   color: white;
   transition: 0.2s;
@@ -364,7 +365,7 @@ header #scroll {
 /* Advisory Committee */
 
 #advisoryCommittee {
-  padding: 100px 50px;
+  padding: 5% 50px;
   text-align: center;
 }
 
@@ -426,16 +427,105 @@ header #scroll {
 
 /* Our team */
 #ourTeam {
-  height: 70vh;
+  padding: 5% 50px;
+  text-align: center;
+  background-color: #000;
+  color: white;
 }
-.teamFlex{
-  margin-top: -40px;
-    display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.team-container{
+  margin: 5% auto;
+}
+.card {
+  text-align: left;
   position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  font-family: Arial, Sans-Serif;
+  width: 400px;
+  height: 600px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+}
+.card.flip {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+.card .face {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateZ(0.1px);
+}
+.card .face {
+  border-radius: 10px;
+}
+.card .front {
+  color: #000;
+  background-color: #101010;
 }
 
+.card h2 {
+  text-transform: uppercase;
+  font-size: 30px !important; 
+  position: absolute;
+  background-color: white;
+  bottom: 70px;
+  margin: 0;
+  line-height: 1em !important;
+  padding: 10px;
+}
+.card h2 small {
+  font-size: 30px;
+}
+.card cite {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  font-size: 15px;
+  background-color: #4dc247;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.card cite a {
+  color: white;
+}
+.card cite a:visited {
+  text-decoration: none;
+  color: white;
+}
+.darth .front {
+  background-size: 170%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: background 0.3s;
+}
+.darth .front:hover {
+  background-size: 200%;
+  background-position: 50% 50%;
+  transition: background 0.5s;
+}
+
+.mememe {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+}
+.mememe a {
+  color: #eeff44;
+}
+.mememe a:visited {
+  color: #eeff44;
+}
 
 /*Events Innovazia*/
 #speciawar{
@@ -565,7 +655,6 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-  width: 100%;
 }
 
 /* container heading styles */
@@ -598,14 +687,6 @@ footer {
   line-height: 1.5rem;
 }
 
-/* embedded map frame */
-
-.map {
-  width: 80%;
-  height: 250px;
-  border: 0;
-  margin: 2.5rem 0rem;
-}
 
 /* second flex container style */
 
@@ -660,7 +741,6 @@ footer {
 
   .container-two {
     width: 100%;
-    padding: 1.5rem;
   }
 
   .container-one {

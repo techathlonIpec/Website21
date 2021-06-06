@@ -25,7 +25,7 @@ const cross = document.querySelector(".cross");
 
 bars.addEventListener("click", () => {
   nav.classList.remove("nav-smooth");
-  nav.classList.add("nav-active");
+  nav.classList.toggle("nav-active");
 });
 
 cross.addEventListener("click", () => {
