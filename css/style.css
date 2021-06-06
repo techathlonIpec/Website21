@@ -293,7 +293,7 @@ header #scroll {
   font-size: 65px;
   background-color: #fff;
 }
-.split >  .btn-readMore {
+.split > .btn-readMore {
   margin-top: 20px;
   font-size: 30px;
   padding: 10px 20px;
@@ -302,7 +302,7 @@ header #scroll {
   border: 2px solid #ff4157;
   cursor: pointer;
 }
-.split >  .btn-readMore:hover {
+.split > .btn-readMore:hover {
   background-color: #ff4157;
   color: white;
   transition: 0.2s;
@@ -370,7 +370,7 @@ header #scroll {
   text-align: center;
 }
 
-#schedule{
+#schedule {
   text-align: center;
   padding: 5% 10%;
   background: #f2ebd8;
@@ -399,7 +399,7 @@ header #scroll {
   flex-wrap: wrap;
 }
 .box {
-  position:static;
+  position: static;
   cursor: pointer;
 }
 .box:hover li {
@@ -425,7 +425,6 @@ header #scroll {
 }
 /* ADVISORY COMMITTEE ENDS HERE */
 
-
 /* Im Working here */
 
 /* Our team */
@@ -435,7 +434,7 @@ header #scroll {
   background-color: #000;
   color: white;
 }
-.team-container{
+.team-container {
   margin: 5% auto;
 }
 .card {
@@ -444,9 +443,9 @@ header #scroll {
   transform-style: preserve-3d;
   transition: transform 0.5s;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
   font-family: Arial, Sans-Serif;
   width: 400px;
@@ -466,7 +465,7 @@ header #scroll {
   bottom: 0px;
   right: 0px;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transform: translateZ(0.1px);
 }
 .card .face {
@@ -479,10 +478,11 @@ header #scroll {
 
 .card h2 {
   text-transform: uppercase;
-  font-size: 30px !important; 
+  font-size: 30px !important;
   position: absolute;
   background-color: white;
-  bottom: 70px;
+  bottom: 60px;
+  left: 0;
   margin: 0;
   line-height: 1em !important;
   padding: 10px;
@@ -531,28 +531,33 @@ header #scroll {
 }
 
 /*Events Innovazia*/
-#speciawar,#ctf{
+#speciawar,
+#ctf {
   background-color: #f2ebd8;
   padding: 5% 10%;
   text-align: center;
 }
-#speciawar p:not(.section-title), #ctf p:not(.section-title),#vividly p:not(.section-title), #infomaze p:not(.section-title){
+#speciawar p:not(.section-title),
+#ctf p:not(.section-title),
+#vividly p:not(.section-title),
+#infomaze p:not(.section-title) {
   font-size: 25px;
 }
 
-#vividly,#infomaze{
+#vividly,
+#infomaze {
   padding: 5% 10%;
   text-align: center;
 }
 
-#prizes{
+#prizes {
   background-color: #000;
   color: #fff;
   padding: 5% 10%;
   text-align: center;
 }
 
-.the-box{
+.the-box {
   border: 3px solid #ff4157;
   width: 250px;
   height: 250px;
@@ -563,24 +568,22 @@ header #scroll {
   align-items: center;
 }
 
-.prize-amount{
+.prize-amount {
   font-size: 40px;
   color: #ff4157;
 }
-.prize-position{
+.prize-position {
   font-size: 25px;
 }
 
-.prize-container{
+.prize-container {
   margin-top: 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-
 /* Prizing Section */
-
 
 /* Time Line CSS*/
 #timelineHead {
@@ -593,7 +596,7 @@ header #scroll {
   border-top-right-radius: 4px;
   background: rgba(255, 255, 255, 0.03);
   color: #003366;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 5px auto;
   letter-spacing: 0.5px;
   position: relative;
@@ -609,7 +612,7 @@ header #scroll {
 .timeline h1,
 .timeline h2,
 .timeline h3 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   letter-spacing: 1.5px;
   font-weight: 100;
   font-size: 1.4em;
@@ -652,7 +655,6 @@ header #scroll {
   top: 5px;
 }
 @media (max-width: 760px) {
-
   .timeline .event:before {
     left: -0.5px;
     top: 28px;
@@ -667,9 +669,9 @@ header #scroll {
     min-width: 120px;
   }
   .timeline .event p {
-      top: 27px;
-      padding: 10px 0px 10px 0px;
-      position: relative;
+    top: 27px;
+    padding: 10px 0px 10px 0px;
+    position: relative;
   }
 }
 
@@ -704,7 +706,6 @@ header #scroll {
 }
 .modal-window header {
   font-weight: bold;
-  
 }
 .modal-window h1 {
   font-size: 150%;
@@ -738,7 +739,7 @@ header #scroll {
 .pulse:hover,
 .pulse:focus {
   -webkit-animation: pulse 1s;
-          animation: pulse 1s;
+  animation: pulse 1s;
   box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
 }
 
@@ -748,8 +749,7 @@ header #scroll {
   }
 }
 
-@keyframes
- pulse {
+@keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 var(--hover);
   }
@@ -761,16 +761,13 @@ header #scroll {
   transform: translateY(-0.25em);
 }
 
-
-
 .offset {
   box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
 }
-.offset:hover, .offset:focus {
+.offset:hover,
+.offset:focus {
   box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
 }
-
-
 
 .pulse {
   --color: #ef6eae;
@@ -791,7 +788,8 @@ button {
   color: var(--color);
   transition: 0.25s;
 }
-button:hover, button:focus {
+button:hover,
+button:focus {
   border-color: var(--hover);
   color: #fff;
 }
@@ -892,5 +890,37 @@ footer {
   margin-top: 2rem;
 }
 
+.icon-img {
+  height: 26px;
+  width: 26px;
+}
 
+.icon-img :hover {
+  transition: 300ms ease-in;
+  transform: scale(1.2);
+}
 
+.bkt {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  background-color: black;
+  border-radius: 25px;
+  color: white;
+  padding: 5px 15px;
+}
+
+.topper {
+  margin-top: 1rem;
+  padding: 3px 5px;
+}
+
+.arrow {
+  margin-bottom: -2.5px;
+  margin-left: 3px;
+}
+
+.bkt:hover {
+  transition: 300ms ease-in;
+  color: coral;
+}
