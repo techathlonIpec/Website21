@@ -133,7 +133,7 @@
   .bars {
     display: block;
     cursor: pointer;
-    margin-right: 70px !important;
+    margin-right: 40px !important;
   }
   .cross {
     display: block;
@@ -153,6 +153,36 @@
 
   .nav-smooth {
     transform: translateX(-106%);
+  }
+
+  #speciawar,#ctf{
+    background-color: #f2ebd8;
+    padding: 5% 2%;
+    text-align: center;
+  }
+  
+  #vividly,#infomaze{
+    padding: 5% 5%;
+    text-align: center;
+  }
+
+  #speciawar p:not(.section-title), #ctf p:not(.section-title),#vividly p:not(.section-title), #infomaze p:not(.section-title){
+    font-size: 12px;
+  }
+
+  #prizes{
+    padding: 5% 2%;
+  }
+  .the-box{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+  }
+  .prize-amount{
+    font-size: 20px;
+  }
+  .prize-position{
+    font-size: 14px;
   }
 }
 

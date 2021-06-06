@@ -42,6 +42,21 @@
       </div>
       <!--  -->
 
+      <script>
+         (()=>{const bars = document.querySelector(".bars");
+const nav = document.querySelector(".nav-links");
+const cross = document.querySelector(".cross");
+
+bars.addEventListener("click", () => {
+  nav.classList.remove("nav-smooth");
+  nav.classList.toggle("nav-active");
+});
+
+cross.addEventListener("click", () => {
+  nav.classList.remove("nav-active");
+  nav.classList.toggle("nav-smooth");
+});})()
+      </script>
 
     </nav>
     <div id="hero-text">
@@ -86,46 +101,41 @@
     <p class="section-title" style="  text-align: center;">
       Prizes
     </p>
-<div class="teamFlex">
-  <div class="card-container" style="margin-top: 10%;">
-    <div class="box" id="box_1">
-      <div class="front">
-        <div class="profile_photo p1">
+    <div class="prize-container">
+      <div class="the-box">
+        <div class="prize-amount">
+          Rs. 7500 
+        </div>
+        <div class="prize-position">
+          1st Position
+        </div>
       </div>
-      <h2 class="full_name" style="text-align: center;">First Prize</h2>
-      <div class="jop" style="text-align: center;">Amount: ₹ 7500</div>
-    </div>
-  </div>
-</div>
-<div class="card-container" style="margin-top: 10%;">
-  <div class="box" id="box_1">
-    <div class="front">
-      <div class="profile_photo p1">
+      <div class="the-box">
+        <div class="prize-amount">
+          Rs. 5000 
+        </div>
+        <div class="prize-position">
+          2nd Position
+        </div>
       </div>
-      <h2 class="full_name" style="text-align: center;">Second Prize</h2>
-      <div class="jop" style="text-align: center;">Amount: ₹ 5000</div>
-    </div>
-  </div>
-  <div class="box" id="box_1">
-    <div class="front">
-      <div class="profile_photo p1">
+      <div class="the-box">
+        <div class="prize-amount">
+          Rs. 3000 
+        </div>
+        <div class="prize-position">
+          3rd Position
+        </div>
       </div>
-      <h2 class="full_name" style="text-align: center;">Third Prize</h2>
-      <div class="jop" style="text-align: center;">Amount: ₹ 3000</div>
-    </div>
-  </div>
-</div> 
-<div class="card-container" style="margin-top: 10%;">
-  <div class="box" id="box_1">
-    <div class="front">
-      <div class="profile_photo p1">
+      <div class="the-box">
+        <div class="prize-amount">
+          Rs. 1000
+        </div>
+        Each
+        <div class="prize-position">
+          Consolation Prize
+        </div>
       </div>
-      <h2 class="full_name" style="text-align: center;">2 Consolation Prizes</h2>
-      <div class="jop" style="text-align: center;">Amount: ₹ 1000 (each)</div>
     </div>
-  </div>
-</div>
-</div>
 </div>
 
 
@@ -136,7 +146,7 @@
    <div id="schedule">
     <!-- timeLine-->
     <div id="timelineHead">
-      <p class="section-title" style="  text-align: center; padding-top: 5%;" >
+      <p class="section-title" >
         Schedule
       </p>
       <p style="text-align: left; padding-top: 10%; text-align: center;" >25 June 2021</p>

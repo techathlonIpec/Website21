@@ -26,8 +26,8 @@
         <div class="links">
           <!-- links in nav bar as well as in drawer -->
           <li><a href="/index">Home</a></li>
-          <li><a href="#speciawar">Speciwar</a></li>
-          <li><a href="#Vividly">Vividly</a></li>
+          <li><a href="#speciawar">Speciawar</a></li>
+          <li><a href="#vividly">Vividly</a></li>
           <li><a href="#ctf">Capture The Flag</a></li>
           <li><a href="#infomaze">Infomaze</a></li>
           <li><a href="#quickLinks">Quick links</a></li>
@@ -42,6 +42,22 @@
         <div class="line3"></div>
       </div>
     </nav>
+
+    <script>
+      (()=>{const bars = document.querySelector(".bars");
+const nav = document.querySelector(".nav-links");
+const cross = document.querySelector(".cross");
+
+bars.addEventListener("click", () => {
+nav.classList.remove("nav-smooth");
+nav.classList.toggle("nav-active");
+});
+
+cross.addEventListener("click", () => {
+nav.classList.remove("nav-active");
+nav.classList.toggle("nav-smooth");
+});})()
+   </script>
     <div id="hero-text">
       <img src="./images/MainLogo.png" height="150px" alt="" srcset="">
       <p>Inderprastha Engineering College</p>
@@ -64,33 +80,35 @@
         is not merely to see creativity but also to trigger the thought process of students regarding their 
         applied knowledge of technology. Winners are awarded with cash prizes and exciting goodies from our sponsors.
         It consist of four competitions-
-        SpeciaWar,Infomaze,Capture The Flag,Vividly
+        SpeciaWar, Infomaze, Capture The Flag, Vividly
       </p>
-      <div class="button">
-        <a href="#speciwar"><p>Know More</p></a>
-      </div>
+        <a href="#Speciawar">
+          <button class="btn-readMore">
+            Know more
+          </button>
+        </a>
     </section>
   </div>
  
     <!-- Info about Events -->
     <div id="speciawar">
       <p class="section-title" style="  text-align: center;">
-        Speciwar
+        Speciawar
       </p>
 
-      <p style= "margin-top: 50px; text-align: center;font-size: 25px; font-weight: 400; padding-top: 5px;">
+      <p style= "margin-top: 50px; text-align: center; font-weight: 400; padding-top: 5px;">
         It is a gaming tournament based on PUBG. </p>
-      <p style= "margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;"> 
+      <p style= "margin-top: 2%; text-align: center; font-weight: 400; padding: 0 100px;"> 
           “Always Play like a Champion. -Never let good be enough!”
       </p>
-      <p style= "margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;"> 
+      <p style= "margin-top: 2%; text-align: center; font-weight: 400; padding: 0 100px;"> 
         Participation Type: Squad (1-4 Members)
       </p>
-      <p style= "margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;"> 
+      <p style= "margin-top: 2%; text-align: center; font-weight: 400; padding: 0 100px;"> 
         Registration Fee: ₹ 200
       </p>
       <div class="teamFlex">
-        <div class="card-container" style="margin-top: 10%;">
+        <div class="card-container" style="margin-top: 2%;">
           <div class="box" id="box_1">
             <div class="front">
               <div class="profile_photo p1">
@@ -117,29 +135,31 @@
           </div>
         </div>
       </div>
-      <div class="button">
-        <p>Register Now</p>
-      </div> 
+      <a href="/registerSpeciawar">
+        <button class="btn-readMore">
+          Regiser Now
+        </button>
+      </a>
     </div>
   
   
-    <div id="Vividly">
-      <p class="section-title" style="  text-align: center;">
+    <div id="vividly">
+      <p class="section-title">
         Vividly
       </p>
-      <p style= "margin-top: 50px; text-align: center;font-size: 25px; font-weight: 400; padding-top: 5px;">
+      <p style= "margin-top: 50px; text-align: center; font-weight: 400; padding-top: 5px;">
         It is basically a video editing based competition.</p>
-      <p style= "margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;"> 
+      <p style= "margin-top: 2%; text-align: center; font-weight: 400; padding: 0 100px;"> 
         “ Everything you can imagine is real ”
       </p>
-      <p style= "margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;"> 
+      <p style= "margin-top: 2%; text-align: center; font-weight: 400; padding: 0 100px;"> 
         Participation Type: Solo
       </p>
-      <p style= "margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;"> 
+      <p style= "margin-top: 2%; text-align: center; font-weight: 400; padding: 0 100px;"> 
         Registration Fee: ₹ 100
       </p>
       <div class="teamFlex">
-        <div class="card-container" style="margin-top: 10%;">
+        <div class="card-container" style="margin-top: 2%;">
           <div class="box" id="box_1">
             <div class="front">
               <div class="profile_photo p1">
@@ -166,9 +186,11 @@
           </div>
         </div>
       </div>
-      <div class="button">
-        <p>Register Now</p>
-      </div>
+      <a href="/registerVividly">
+        <button class="btn-readMore">
+          Regiser Now
+        </button>
+      </a>
     </div>
   
   
@@ -176,20 +198,20 @@
       <p class="section-title" style="  text-align: center;">
         Capture the Flag
       </p>
-      <p style= "margin-top: 50px; text-align: center;font-size: 25px; font-weight: 400; padding-top: 5px;">
+      <p style= "margin-top: 50px; text-align: center; font-weight: 400; padding-top: 5px;">
         Participants have to solve questions on their own or by using hints.</p>
-      <p style= "margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;"> 
+      <p style= "margin-top: 2%; text-align: center; font-weight: 400; padding: 0 100px;"> 
         “ Identify theft can happen anywhere ”
       </p>
-      <p style= "margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;"> 
+      <p style= "margin-top: 2%; text-align: center; font-weight: 400; padding: 0 100px;"> 
         Participation Type: Team (1-3 Members)
       </p>
-      <p style= "margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;"> 
+      <p style= "margin-top: 2%; text-align: center; font-weight: 400; padding: 0 100px;"> 
         Registration Fee: ₹ 150
       </p>
 
       <div class="teamFlex">
-        <div class="card-container" style="margin-top: 10%;">
+        <div class="card-container" style="margin-top: 2%;">
           <div class="box" id="box_1">
             <div class="front">
               <div class="profile_photo p1">
@@ -216,28 +238,30 @@
           </div>
         </div>
       </div>
-      <div class="button">
-        <p>Register Now</p>
-      </div>
+      <a href="/registerCtf">
+        <button class="btn-readMore">
+          Regiser Now
+        </button>
+      </a>
     </div>
   
     <div id="infomaze">
       <p class="section-title" style="  text-align: center;">
         Infomaze
       </p>
-      <p style= "margin-top: 50px; text-align: center;font-size: 25px; font-weight: 400; padding-top: 5px;">
+      <p style= "margin-top: 50px; text-align: center; font-weight: 400; padding-top: 5px;">
         It is a quiz competition on technology having two rounds comprising quiz questionnaire cross questioning in Round-2.</p>
-      <p style= "margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 50px;"> 
+      <p style= "margin-top: 2%; text-align: center; font-weight: 400; padding: 0 50px;"> 
         “ Think, Rethink and repeat  ”
       </p>
-      <p style= "margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;"> 
+      <p style= "margin-top: 2%; text-align: center; font-weight: 400; padding: 0 100px;"> 
         Participation Type: Solo
       </p>
-      <p style= "margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;"> 
+      <p style= "margin-top: 2%; text-align: center; font-weight: 400; padding: 0 100px;"> 
         Registration Fee: ₹ 100
       </p>
       <div class="teamFlex">
-        <div class="card-container" style="margin-top: 10%;">
+        <div class="card-container" style="margin-top: 2%;">
           <div class="box" id="box_1">
             <div class="front">
               <div class="profile_photo p1">
@@ -264,9 +288,11 @@
           </div>
         </div>
       </div>
-      <div class="button">
-        <p>Register Now</p>
-      </div>
+      <a href="/registerInfomaze">
+        <button class="btn-readMore">
+          Regiser Now
+        </button>
+      </a>
     </div>
 
    <!----------------------------------- schedule ------------------------>

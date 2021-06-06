@@ -195,6 +195,7 @@ header #scroll {
 
 #content {
   margin: 0px;
+  text-align: center;
 }
 
 #content .info {
@@ -371,6 +372,8 @@ header #scroll {
 
 #schedule{
   text-align: center;
+  padding: 5% 10%;
+  background: #f2ebd8;
 }
 
 .section-title {
@@ -528,31 +531,60 @@ header #scroll {
 }
 
 /*Events Innovazia*/
-#speciawar{
+#speciawar,#ctf{
   background-color: #f2ebd8;
-  height: fit-content;
+  padding: 5% 10%;
+  text-align: center;
+}
+#speciawar p:not(.section-title), #ctf p:not(.section-title),#vividly p:not(.section-title), #infomaze p:not(.section-title){
+  font-size: 25px;
 }
 
-#ctf{
-  background-color: #f2ebd8;
-  height: fit-content;
+#vividly,#infomaze{
+  padding: 5% 10%;
+  text-align: center;
 }
 
 #prizes{
-  background-color: #f2ebd8;
-  height: fit-content;
+  background-color: #000;
+  color: #fff;
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.the-box{
+  border: 3px solid #ff4157;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prize-amount{
+  font-size: 40px;
+  color: #ff4157;
+}
+.prize-position{
+  font-size: 25px;
+}
+
+.prize-container{
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 
-
-/* I worked here */
+/* Prizing Section */
 
 
 /* Time Line CSS*/
 #timelineHead {
-  margin-top: 10px;
   text-align: center;
-  background: #f2ebd8;
 }
 /* Timeline */
 .timeline {
@@ -673,7 +705,6 @@ footer {
 .container-one,
 .container-two,
 .container-three {
-  padding: 1rem;
   flex: 1;
 }
 
