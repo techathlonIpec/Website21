@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/styles.scss";
-import {Router} from '@reach/router'
+import {Router,Link} from '@reach/router'
 import CTF from "./components/register/forms/CTF.jsx";
 import Hackathon from "./components/register/forms/hackathon.jsx";
 import Infomaze from "./components/register/forms/infomaze.jsx";
@@ -10,17 +10,18 @@ import Vividly from "./components/register/forms/vividly.jsx";
 
 
 class App extends React.Component {
-  state = {};
-
   render() {
+
     return (
-      <Router>
+      <div>
+        <Router>
         <Hackathon path='/hackathon'/>
         <Infomaze path='/infomaze'/>
         <SpeciaWar path='/speciawar'/>
         <Vividly path='/vividly'/>
         <CTF path='/ctf'/>
       </Router>
+      </div>
     );
   }
 }
