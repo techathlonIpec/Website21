@@ -632,13 +632,14 @@ header #scroll {
   top: 0;
 }
 .timeline .event:before {
-  left: -217.5px;
-  color: #f2ebd8;
+  left: -30%;
+  background-color: #4298c3;
+  color: white;
   content: attr(data-date);
   text-align: right;
   font-weight: 400;
   font-size: 0.9em;
-  min-width: 120px;
+  min-width: 80px;
 }
 .timeline .event:after {
   box-shadow: 0 0 0 4px #169eda;
@@ -805,8 +806,8 @@ button {
 
 /*  Footer  */
 footer {
-  background-color: #343434;
   width: 100%;
+  background-color: black;
 }
 /* first section whih three flex  */
 
@@ -856,7 +857,7 @@ footer {
 }
 
 .container-two li {
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
   list-style: none;
 }
 
