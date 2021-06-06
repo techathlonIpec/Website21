@@ -207,6 +207,9 @@
   .container-three {
     width: 100%;
   }
+  .modal-window > div {
+    width: 200px;
+  }
 }
 
 
