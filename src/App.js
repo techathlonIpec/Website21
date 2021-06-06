@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/styles.scss";
-import {Router,Link} from '@reach/router'
+import {Router} from '@reach/router'
 import CTF from "./components/register/forms/CTF.jsx";
 import Hackathon from "./components/register/forms/hackathon.jsx";
 import Infomaze from "./components/register/forms/infomaze.jsx";
