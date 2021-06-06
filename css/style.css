@@ -804,6 +804,92 @@ button {
 }
 
 /*  Footer  */
+footer {
+  background-color: #343434;
+  width: 100%;
+}
+/* first section whih three flex  */
+
+.section1 {
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/* container heading styles */
+.container-one,
+.container-two,
+.container-three h3 {
+  text-transform: uppercase;
+  font-family: "Roboto Mono", monospace;
+  color: #818186ea;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* flex container style */
+.container-one,
+.container-two,
+.container-three {
+  padding: 1rem;
+  flex: 1;
+}
+
+/* flex container one styling */
+
+.container-one p {
+  color: white;
+  margin-top: 1rem;
+  text-align: left;
+  font-weight: bolder;
+  line-height: 1.5rem;
+}
+
+/* second flex container style */
+
+.container-two ul {
+  margin: 2rem 0rem;
+}
+
+.container-two li {
+  padding: 1rem 0rem;
+  list-style: none;
+}
+
+.container-two a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2 rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* third flex container style */
+.container-three ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 35%;
+}
+.container-three li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.container-three a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.container-three p {
+  margin-top: 2rem;
+}
 
 
 
