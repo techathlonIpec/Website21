@@ -672,136 +672,6 @@ header #scroll {
   }
 }
 
-
-/*     Footer    */
-/* footer section style */
-footer {
-  background-color: #343434;
-  width: 100%;
-}
-/* first section whih three flex  */
-
-.section1 {
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-/* container heading styles */
-.container-one,
-.container-two,
-.container-three h3 {
-  text-transform: uppercase;
-  font-family: "Roboto Mono", monospace;
-  color: #818186ea;
-  letter-spacing: 3px;
-  font-size: 0.9rem;
-  text-align: left;
-}
-
-/* flex container style */
-.container-one,
-.container-two,
-.container-three {
-  flex: 1;
-}
-
-/* flex container one styling */
-
-.container-one p {
-  color: white;
-  margin-top: 1rem;
-  text-align: left;
-  font-weight: bolder;
-  line-height: 1.5rem;
-}
-
-
-/* second flex container style */
-
-.container-two ul {
-  margin: 2rem 0rem;
-}
-
-.container-two li {
-  padding: 1rem 0rem;
-  list-style: none;
-}
-
-.container-two a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2 rem;
-  font-weight: bolder;
-  cursor: pointer;
-}
-
-/* third flex container style */
-.container-three ul {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 1.5rem;
-  width: 35%;
-}
-.container-three li {
-  list-style: none;
-  margin-right: 2rem;
-}
-
-.container-three a {
-  color: white;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.container-three p {
-  margin-top: 2rem;
-}
-
-/* styling for mobile of section 1 */
-@media screen and (max-width: 768px) {
-  .section1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .container-two {
-    width: 100%;
-  }
-
-  .container-one {
-    width: 100%;
-  }
-  .container-three {
-    width: 100%;
-  }
-}
-
-/* section-2 of footer */
-
-.section2 {
-  width:auto;
-  background-color: #272727;
-  text-align: center;
-  padding: 1.3rem;
-}
-
-.section2 p {
-  color: white;
-}
-.year {
-  color: coral;
-}
-
-.heart {
-  color: #a83f39;
-}
-
 /* Modal CSS */
 
 .modal-window {
@@ -829,14 +699,16 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2em;
-  background: white;
+  background: rgb(0, 0, 0);
 }
 .modal-window header {
   font-weight: bold;
+  
 }
 .modal-window h1 {
   font-size: 150%;
   margin: 0 0 15px;
+  color: white;
 }
 
 .modal-close {
@@ -851,7 +723,7 @@ footer {
   text-decoration: none;
 }
 .modal-close:hover {
-  color: black;
+  color: whitesmoke;
 }
 
 .modal-window > div {
@@ -862,5 +734,75 @@ footer {
   margin-bottom: 15px;
 }
 
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
 
-/* Footer */
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes
+ pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+
+
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+
+.raise {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+.offset {
+  --color: #19bc8b;
+  --hover: #1973bc;
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+
+
+
