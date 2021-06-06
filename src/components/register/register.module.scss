@@ -170,20 +170,7 @@ div.loading{
 .body p {
   font-weight: 600;
 }
-.errorMessage{
-  background-color: red;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-transform: capitalize;
-}
-.successMessage{
-  background-color: #22bb33;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-transform: capitalize;
-}
+
 
 .header{
   height: 8rem;
@@ -299,20 +286,24 @@ div.loading{
   
 }
 
-.errorNotification{
+.errorNotification,.successNotification{
   margin-top: 10px;
   position: fixed;
-  width: 20vw;
+  text-transform: capitalize;
+  width: 30vw;
   margin: auto;
   min-height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  right: 2vw;
-  top: 15vh;
+  left: 35%;
+  top: 4vh;
   background-color: #ef4f4f;
   border-radius: 5px;
+}
+.successNotification{
+  background-color: #22bb33;
 }
 
 
@@ -328,7 +319,7 @@ div.loading{
   width: 100% !important;
 }
 
-.errorNotification{
+.errorNotification,.successNotification{
   padding: 0 1rem;
  
 }
@@ -350,8 +341,8 @@ div.loading{
     padding: 1rem;
   }
 
-  .errorNotification{
-   
+  .errorNotification,.successNotification{
+    left: 30%;
     width: 40vw;
     padding: 0 1.5rem;
   }
@@ -370,7 +361,8 @@ div.loading{
       height: 100%;
       width: 50%;
     }
-    .errorNotification{
+    .errorNotification,.successNotification{
+      left: 25%;
       width: 50vw;
     }
 }
@@ -399,9 +391,6 @@ div.loading{
         width: 85%;
       }
 
-      .Button{
-        width: 50%;
-      }
 }
 @media screen and(max-width:450px) {
 
@@ -416,9 +405,7 @@ div.loading{
   .fieldsBox{
     width: 90%;
   }
-  .Button{
-    width: 60%;
-  }
+
   .subTeam{
     display: block; 
     width: 95%; 
@@ -445,17 +432,14 @@ div.loading{
   .fieldsBox{
     width: 90%;
   }
-  .Button{
-    width: 70% !important;
-  }
   .subTeam{
     display: block; 
     width: 100%; 
   }
 
-  .errorNotification{
+  .errorNotification,.successNotification{
+    left: 20%;
     width: 60vw;
-    
   }
 
 }

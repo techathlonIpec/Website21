@@ -1,7 +1,6 @@
 import React,{useState} from 'react'
 import classes from "../register.module.scss";
 import QueueAnim from 'rc-queue-anim';
-import gamer from "../images/gaming.jpg"
 import axios from "axios";
 import { Col, Row, Input, Button} from "antd";
 
@@ -37,6 +36,8 @@ export default function SpeciaWar() {
             setError(true)
             setSuccess(false)
             setLoading(false)
+
+            setTimeout(()=>{setError(false)}, 5000)
         }  
         else {
             setApiMessage('Your Registration has been recieved. Kindly check your email.')
@@ -44,6 +45,7 @@ export default function SpeciaWar() {
             setSuccess(true)
             setLoading(false)
 
+            setTimeout(()=>{setSuccess(false)}, 5000)
         } 
     }).catch(e => { console.log(e.details ,"error"); setLoading(false)})
 } 
@@ -170,15 +172,8 @@ export default function SpeciaWar() {
                 <Row className={classes.formBox}>
 
                     <div className={classes.header}>
-                        <h3 className={classes.headerText}>Register for Specia War</h3>
-                        <img src={gamer} className={classes.headerImage} alt="Gamer" />
+                        <h3 className={classes.headerText}>Register for Specia War</h3>                        
                     </div>
-                    {error? (<div className={classes.errorMessage}>
-                        {apiMessage}
-                    </div>): ''}
-                    {success? (<div className={classes.successMessage}>
-                        {apiMessage}
-                    </div>): ''}
                 {/* animation */}
                 <div className={classes.fieldsBox}>
                     <QueueAnim delay={300} className="queue-simple">
@@ -240,7 +235,14 @@ export default function SpeciaWar() {
                         </div>
                         <Button onClick={()=> SubmitHandler()} key = 'z' block className={classes.Button} >Register Now</Button>
                         </QueueAnim>
-
+                        {error && <div className={classes.errorNotification}>
+                             <p style={{color:"white", fontSize:"13px",flexWrap: "wrap",margin:'0 6px'}}>{apiMessage}</p>
+                             <p style={{color:"white",zIndex:"10", cursor:"pointer"}} onClick={()=>setError(false)} >X</p>
+                             </div>}
+                             {success && <div className={classes.successNotification}>
+                             <p style={{color:"white", fontSize:"13px",flexWrap: "wrap",margin:'0 6px'}}>{apiMessage}</p>
+                             <p style={{color:"white",zIndex:"10", cursor:"pointer"}} onClick={()=>setSuccess(false)} >X</p>
+                             </div>}
                         <br /><br />
                         </div>
                 </Row>
