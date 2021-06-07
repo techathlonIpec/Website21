@@ -83,7 +83,7 @@ export default function SpeciaWar() {
    const initialArray=(teamSize)=>{
        let updatedParticipants=[]
     for (var i = 0; i < teamSize; i++) {
-        updatedParticipants.push({name:"" , college:"" ,year:"" ,branch:"" ,githubID:""});
+        updatedParticipants.push({name:"" , college:"" ,year:"" ,branch:"", callOfDutyID: ""});
     }
 
     setParticipants(updatedParticipants)
@@ -142,12 +142,12 @@ export default function SpeciaWar() {
 
 
             <div key="4" className={classes.formField}>
-                <p className={classes.title}>Github Id</p>
+                <p className={classes.title}>Call of duty Id</p>
                 <Input
                     type='text'
-                    onChange={(e)=>onSubDataChange(index,"githubID",e)}
+                    onChange={(e)=>onSubDataChange(index,"callOfDutyID",e)}
                     className={classes.inputField}
-                    placeholder='Enter your Github ID'
+                    placeholder='Enter your Call of Duty ID'
                 />
             </div>  
 
