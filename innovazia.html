@@ -46,31 +46,18 @@
       </div>
     </nav>
 
-    <script>
-      (() => {
-        const bars = document.querySelector(".bars");
-        const nav = document.querySelector(".nav-links");
-        const cross = document.querySelector(".cross");
+    <script src="./js/sub.js"></script>
 
-        bars.addEventListener("click", () => {
-          nav.classList.remove("nav-smooth");
-          nav.classList.toggle("nav-active");
-        });
 
-        cross.addEventListener("click", () => {
-          nav.classList.remove("nav-active");
-          nav.classList.toggle("nav-smooth");
-        });
-      })()
-    </script>
-    <div id="hero-text">
+    <div id="hero-text" class="title-two">
       <img src="./images/MainLogo.png" height="200px" alt="" srcset="">
       <h1>Innovazia '21</h1>
       <p class="hero-medium" style="font-weight: 450;">“Create, Showcase, Learn and Grow”</p>
+
+      <a href="#content">
+        <div id="new-scroll"></div>
+      </a>
     </div>
-    <a href="#content">
-      <div id="scroll"></div>
-    </a>
   </header>
   <div id="content">
     <section class="info">
@@ -443,5 +430,6 @@
   </div>
   <!-- flex containers end here -->
 </footer>
+
 
 </html>

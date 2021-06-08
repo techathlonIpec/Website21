@@ -30,7 +30,7 @@ header {
   width: auto;
   height: 110vh;
   position: relative;
-  background: #f2ebd8;
+  /* background: coral; */
   z-index: 400;
 }
 
@@ -142,13 +142,12 @@ header #hero-text h1 {
 }
 
 header #hero-text p {
-  font-size: 3.0em;
+  font-size: 3em;
   font-weight: 900;
 }
 header #hero-text .hero-small {
   font-size: 1.5em;
   font-weight: 600;
-  
 }
 
 header #hero-text h1,
@@ -166,8 +165,8 @@ header #scroll {
   left: 0;
   right: 0;
   margin: auto;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
   cursor: pointer;
   -webkit-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
@@ -257,7 +256,6 @@ header #scroll {
   background-color: #ff4157;
   transition: 0.3s;
 }
-
 
 .btn-register {
   position: relative;
@@ -564,23 +562,22 @@ header #scroll {
   padding: 5% 10%;
   text-align: center;
 }
-#infomaze  {
+#infomaze {
   background: url(/images/infomaze1.png);
   background-size: 100% 100%;
 }
-#ctf  {
+#ctf {
   background: url(/images/ctf.png);
   background-size: 100% 100%;
 }
-#vividly  {
+#vividly {
   background: url(/images/vividly.png);
   background-size: 100% 100%;
 }
-#speciawar  {
+#speciawar {
   background: url(/images/speciawar.png);
   background-size: 100% 100%;
 }
-
 
 #speciawar p:not(.section-title),
 #ctf p:not(.section-title),
@@ -969,4 +966,60 @@ footer {
 .bkt:hover {
   transition: 300ms ease-in;
   color: coral;
+}
+
+.title {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Montserrat";
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.more-pens {
+  position: fixed;
+  /* left: 20px; */
+  bottom: 20px;
+  color: white;
+  z-index: 10;
+  /* font-family: "Montserrat"; */
+  /* font-size: 12px; */
+}
+
+.spacer {
+  width: 100%;
+  height: 10vh;
+}
+
+header #new-scroll {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 13%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+  -webkit-animation: bounce 1.2s infinite ease;
+  animation: bounce 1.2s infinite ease;
+}
+
+.title-two {
+  background-color: #f2ebd8;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Montserrat";
+  text-align: center;
+  width: 100%;
 }
