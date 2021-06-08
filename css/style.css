@@ -148,6 +148,7 @@ header #hero-text p {
 header #hero-text .hero-small {
   font-size: 1.5em;
   font-weight: 600;
+  
 }
 
 header #hero-text h1,
@@ -217,7 +218,7 @@ header #scroll {
 }
 
 #content .info > p:first-child:before {
-  width: 80px;
+  width: 250px;
   height: 2px;
   position: absolute;
   content: "";
@@ -254,6 +255,28 @@ header #scroll {
 .btn-readMore:hover {
   color: white;
   background-color: #ff4157;
+  transition: 0.3s;
+}
+
+
+.btn-register {
+  position: relative;
+  color: white;
+  background-color: #ff4157;
+  border: 2px solid #ff4157;
+  padding: 20px 30px;
+  margin: 75px auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.btn-register:hover {
+  background-color: transparent;
+  color: #ff4157;
   transition: 0.3s;
 }
 
@@ -538,15 +561,33 @@ header #scroll {
 /*Events Innovazia*/
 #speciawar,
 #ctf {
-  background-color: #f2ebd8;
   padding: 5% 10%;
   text-align: center;
 }
+#infomaze  {
+  background: url(/images/infomaze1.png);
+  background-size: 100% 100%;
+}
+#ctf  {
+  background: url(/images/ctf.png);
+  background-size: 100% 100%;
+}
+#vividly  {
+  background: url(/images/vividly.png);
+  background-size: 100% 100%;
+}
+#speciawar  {
+  background: url(/images/speciawar.png);
+  background-size: 100% 100%;
+}
+
+
 #speciawar p:not(.section-title),
 #ctf p:not(.section-title),
 #vividly p:not(.section-title),
 #infomaze p:not(.section-title) {
   font-size: 25px;
+  color: white;
 }
 
 #vividly,

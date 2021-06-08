@@ -60,6 +60,11 @@
     margin: 20px auto;
     padding: 5px 10px;
   }
+  .btn-register {
+    font-size: 14px;
+    margin: 20px auto;
+    padding: 5px 10px;
+  }
   #advisoryCommittee {
     padding: 100px 0px;
   }
