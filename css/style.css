@@ -44,7 +44,7 @@ nav {
   top: 0;
   z-index: 900;
   width: 100%;
-  background-color: #f2ebd8;
+  background-color: #0c0c34;
 }
 .logo {
   color: white;
@@ -67,7 +67,7 @@ nav {
 
 /* navlink styling */
 .nav-links a {
-  color: black;
+  color: white;
   font-size: 0.75rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -139,14 +139,15 @@ header .logo-landing {
 header #hero-text h1 {
   font-size: 7em;
   font-weight: 900;
+  color: #ce1122;
 }
 
 header #hero-text p {
-  font-size: 3em;
+  font-size: 2.7em;
   font-weight: 900;
 }
 header #hero-text .hero-small {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 600;
 }
 
@@ -165,8 +166,8 @@ header #scroll {
   left: 0;
   right: 0;
   margin: auto;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
   cursor: pointer;
   -webkit-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
@@ -391,9 +392,12 @@ header #scroll {
 
 /* Advisory Committee */
 
+
+
 #advisoryCommittee {
   padding: 5% 50px;
   text-align: center;
+
 }
 
 #schedule {
@@ -594,7 +598,8 @@ header #scroll {
 }
 
 #prizes {
-  background-color: #000;
+  background: url(/images/h3.png);
+  background-size: 100% 100%;
   color: #fff;
   padding: 5% 10%;
   text-align: center;
@@ -977,13 +982,12 @@ footer {
   font-family: "Montserrat";
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   overflow: hidden;
 }
 .more-pens {
   position: fixed;
   /* left: 20px; */
-  bottom: 20px;
   color: white;
   z-index: 10;
   /* font-family: "Montserrat"; */
@@ -1014,7 +1018,7 @@ header #new-scroll {
 
 .title-two {
   background-color: #f2ebd8;
-  z-index: 10;
+  z-index: -1;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1023,3 +1027,6 @@ header #new-scroll {
   text-align: center;
   width: 100%;
 }
+
+
+

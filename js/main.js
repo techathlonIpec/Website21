@@ -35,7 +35,7 @@ right.addEventListener("mouseleave", () => {
   });
 })();
 
-let max_particles = 5000;
+let max_particles = 1000;
 let bag = document.querySelector(".title");
 
 var tela = document.createElement("canvas");
@@ -131,3 +131,10 @@ function update() {
   requestAnimationFrame(update.bind(this));
 }
 update();
+
+AOS.init();
+
+
+
+
+

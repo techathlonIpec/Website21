@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <link rel="icon" href="./images/MainLogo.png" size="10x10">
   <link rel="stylesheet" href="./css/style.css">
@@ -17,7 +18,6 @@
 </head>
 
 <body>
-
   <header>
     <nav>
       <div class="logo">
@@ -54,17 +54,17 @@
     <div id="hero-text" class="title">
       <div class="more-pens">
         <div class="logo-landing">
-          <img src="./images/ipec.png" height="200px" alt="" srcset="">
-          <img src="./images/MainLogo.png" height="200px" alt="" srcset="">
+          <img src="./images/ipec.png" height="180px" alt="" srcset="" data-aos="fade-up" data-aos-delay="500">
+          <img src="./images/MainLogo.png" height="180px" alt="" srcset="" data-aos="fade-up" data-aos-delay="500">
         </div>
-        <p>Inderprastha Engineering College</p>
-        <p class="hero-small">Department of Computer Science & Engineering <br> and </p>
-        <p class="hero-small">Department of Information Technology</p>
-        <p class="hero-small">
+        <p data-aos="fade-up" data-aos-delay="600">Inderprastha Engineering College</p>
+        <p class="hero-small" data-aos="fade-up" data-aos-delay="700">Department of Computer Science & Engineering <br> and </p>
+        <p class="hero-small"data-aos="fade-up" data-aos-delay="700">Department of Information Technology</p>
+        <p class="hero-small"data-aos="fade-up" data-aos-delay="750">
           jointly presents
         </p>
-        <h1>Techathlon '21</h1>
-        <p class="hero-small">Yes it is Finally here. <br> Scroll Down to know more.</p>
+        <h1 data-aos="fade-up" data-aos-delay="800">Techathlon '21</h1>
+        <p class="hero-small" data-aos="fade-up" data-aos-delay="850">Yes it is Finally here. <br> Scroll Down to know more.</p>
         <div class="spacer"></div>
 
         <a href="#content">
@@ -76,8 +76,8 @@
   </header>
   <div id="content">
     <section class="info">
-      <p>What is Techathlon '21?</p>
-      <p style="text-align: justify;">
+      <p data-aos="fade-up" data-aos-delay="100">What is Techathlon '21?</p>
+      <p style="text-align: justify;" data-aos="fade-up" data-aos-delay="500">
         Techathlon, an event organized by IPEC (Inderprastha Engineering College,Ghaziabad). It is a code sprint-like
         event in which computer programmers and others involve in software development, including graphic designers,
         interface designers, project managers and others, often comprises of
@@ -85,7 +85,7 @@
         participants are encouraged to answer the given problem statements and if they do, they have the option to get
         their project judged with the possibility of moving on to the Tech World.
       </p>
-      <strong style="text-align: center;">
+      <strong style="text-align: center;" data-aos="fade-up" data-aos-delay="300">
         It is divided into two major events
       </strong>
     </section>
@@ -93,13 +93,13 @@
   <div id="events">
     <div class="container">
       <div class="split left">
-        <h1>Hackathon</h1>
+        <h1 data-aos="fade-up" data-aos-delay="100">Hackathon</h1>
         <a href="/hackathon" class="">
           <button class="btn-readMore">Learn More</button>
         </a>
       </div>
       <div class="split right">
-        <h1>Innovazia</h1>
+        <h1 data-aos="fade-up" data-aos-delay="100">Innovazia</h1>
         <a href="/innovazia" class="">
           <button class="btn-readMore">Learn More</button>
         </a>
@@ -107,10 +107,10 @@
     </div>
   </div>
   <div id="advisoryCommittee">
-    <p class="section-title">
+    <p class="section-title" data-aos="fade-up" data-aos-delay="100">
       Advisory Committee
     </p>
-    <div class="card-container" style="margin-top: 5%;">
+    <div class="card-container" style="margin-top: 5%;" data-aos="fade-up" data-aos-delay="300">
       <div class="box" id="box_1">
         <div class="front">
           <div class="profile_photo p1"></div>
@@ -119,7 +119,7 @@
         </div>
       </div>
     </div>
-    <div class="card-container">
+    <div class="card-container" data-aos="fade-up" data-aos-delay="300">
       <div class="box" id="box_1">
         <div class="front">
           <div class="profile_photo p1"></div>
@@ -128,7 +128,7 @@
         </div>
       </div>
     </div>
-    <div class="card-container">
+    <div class="card-container" data-aos="fade-up" data-aos-delay="300">
       <div class="box" id="box_1">
         <div class="front">
           <div class="profile_photo p1"></div>
@@ -144,7 +144,7 @@
         </div>
       </div>
     </div>
-    <div class="card-container">
+    <div class="card-container"data-aos="fade-up" data-aos-delay="300">
       <div class="box" id="box_1">
         <div class="front">
           <div class="profile_photo p1"></div>
@@ -239,10 +239,10 @@
 
   <!----------------- our Team ----------------------------------------------------------------->
   <div id="ourTeam">
-    <p class="section-title">
+    <p class="section-title" data-aos="fade-up" data-aos-delay="200">
       Our Team
     </p>
-    <div class="team-container">
+    <div class="team-container" data-aos="fade-up" data-aos-delay="200">
       <div class="card darth">
         <div class="face front" style="background-image: url('./images/ankur.jpg');">
           <h2><small>Ankur</small><br />Kanaujia</h2>
@@ -297,6 +297,10 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 <!-- ------------Footer---------------------------->
 <footer style="background: #f2ebd8;">
