@@ -14,15 +14,19 @@
     height: 75px !important;
   }
 
+  header #landing-logo {
+    height: 100px;
+  }
+
   header #hero-text {
-    height: 100vh;
+    height: 120vh;
   }
 
   header #hero-text h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   header #hero-text p {
-    font-size: 40px;
+    font-size: 30px;
   }
   header #hero-text .hero-small {
     font-size: 20px;
