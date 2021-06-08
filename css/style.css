@@ -28,7 +28,7 @@ body {
 
 header {
   width: auto;
-  height: 100vh;
+  height: 110vh;
   position: relative;
   background: #f2ebd8;
   z-index: 400;
@@ -125,7 +125,7 @@ header nav .logo img {
 header #hero-text {
   text-align: center;
   width: 100%;
-  min-height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,16 +133,21 @@ header #hero-text {
   /* margin-top: -150px; */
 }
 
+header .logo-landing {
+  padding-top: 10%;
+}
 header #hero-text h1 {
-  font-size: 70px;
-  font-weight: 100;
+  font-size: 7em;
+  font-weight: 900;
 }
 
 header #hero-text p {
-  font-size: 35px;
+  font-size: 3.0em;
+  font-weight: 900;
 }
 header #hero-text .hero-small {
-  font-size: 25px;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 header #hero-text h1,
@@ -156,7 +161,7 @@ header #scroll {
   width: 30px;
   height: 30px;
   position: absolute;
-  bottom: 5%;
+  bottom: 3%;
   left: 0;
   right: 0;
   margin: auto;
