@@ -26,6 +26,76 @@ body {
 
 /* work from here  */
 
+
+/* Preloader CSS */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v30/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfJQ.ttf) format('truetype');
+}
+svg.preloader {
+  display: block;
+  width: 170px;
+  height: 80px;
+}
+circle.dot {
+  fill: #e74c3c;
+}
+circle.dot:nth-of-type(1) {
+  -webkit-animation: slide 2s ease infinite;
+          animation: slide 2s ease infinite;
+}
+circle.dot:nth-of-type(2) {
+  fill: #f1c40f;
+  transform: translateX(55px);
+  -webkit-animation: slide 2s ease infinite;
+          animation: slide 2s ease infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@-webkit-keyframes slide {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(70px);
+  }
+}
+@keyframes slide {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(70px);
+  }
+}
+#preloader {
+  background-color: #0E1434;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  color: #ff4157;
+  font-size: 90px;
+  box-orient: horizontal;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+.container {
+  align-self: center;
+}
+.loadingText {
+  font-family: 'Comfortaa';
+  color: #ff4157;
+  font-size: 40px;
+}
+
+
 header {
   width: auto;
   height: 110vh;
