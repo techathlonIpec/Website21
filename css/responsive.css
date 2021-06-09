@@ -15,7 +15,8 @@
   }
 
  .logo-landing {
-    height: 40px !important;
+    height: 35px !important;
+    padding-top: 3%;
     }
 
   header #hero-text {
