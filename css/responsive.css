@@ -14,7 +14,7 @@
     height: 100px !important;
   }
 
- .logo-landing {
+ .logo-landing > img {
     height: 25px !important;
     padding-top: 3%;
     }
