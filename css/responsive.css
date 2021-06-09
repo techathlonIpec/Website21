@@ -10,12 +10,12 @@
     width: 100% !important;
   }
 
-  #hero-text .logoE > img {
+  #hero-text .logo > img {
     height: 100px !important;
   }
 
  .logo-landing {
-    height: 30px !important;
+    width: 50% !important;
     padding-top: 3%;
     }
 
