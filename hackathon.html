@@ -9,6 +9,7 @@
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
     integrity="undefined" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" href="./images/MainLogo.png" size="10x10">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
@@ -54,9 +55,9 @@
     <div id="hero-text" class="title-two" style="background: url(/images//w11.png); background-size: 100% 100%;">
         <img src="./images/MainLogo.png" height="200px" alt="" srcset="">
       <h1>Hackathon '21</h1>
-      <p class="hero-medium" style="font-weight: bolder; color: white;" >“Code to hack it”</p>
+      <p class="hero-medium" style="font-weight: bolder; color: white;"> “Code to hack it”</p>
       <div class="spacer"></div>
-      <p class="hero-small" style="color: white;" data-aos="fade-up" data-aos-delay="850" >Scroll Down to know more.</p>
+      <p class="hero-small" style="color: white;">Scroll Down to know more.</p>
 
       <a href="#content">
         <div id="scroll"></div>
@@ -66,8 +67,8 @@
   </header>
   <div id="content">
     <section class="info" style="text-align: center;">
-      <p>What is Hackathon '21?</p>
-      <p style="text-align: justify;">
+      <p data-aos="fade-up" data-aos-delay="200" >What is Hackathon '21?</p>
+      <p style="text-align: justify;" data-aos="fade-up" data-aos-delay="500">
         It is a 2 day coding event where participants solve the given problem statement with their team to compete with
         others.
         What if the most creative minds siphone off into solving the most impactful problems of today?
@@ -76,13 +77,13 @@
         to create a prototype or an efficient and representable product. Winning teams are awarded with cash prizes and
         exciting goodies from our sponsors.
       </p>
-      <p style="margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;">
+      <p style="margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;" data-aos="fade-up" data-aos-delay="200">
         Participation Type: Team (2-4 Members)
       </p>
-      <p style="margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;">
+      <p style="margin-top: 2%; text-align: center;font-size: 20px; font-weight: 400; padding: 0 100px;" data-aos="fade-up" data-aos-delay="200">
         Registration Fee: ₹ 500
       </p>
-      <a href="https://registration.techathlonipec.tech/hackathon" target="_blank">
+      <a href="https://registration.techathlonipec.tech/hackathon" target="_blank" data-aos="fade-up" data-aos-delay="200">
         <button class="btn-readMore">
           Register Now
         </button>
@@ -91,10 +92,10 @@
   </div>
 
   <div id="prizes">
-    <p class="section-title" style="  text-align: center;">
+    <p class="section-title" style="  text-align: center;" data-aos="fade-up" data-aos-delay="200">
       Prizes
     </p>
-    <div class="prize-container">
+    <div class="prize-container" data-aos="fade-up" data-aos-delay="400">
       <div class="the-box">
         <div class="prize-amount">
           ₹ 7500
@@ -219,6 +220,10 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 <footer>
   <div class="section1">
