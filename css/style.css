@@ -274,7 +274,7 @@ header #scroll {
 #content {
   margin-top: -35px;
   text-align: center;
-  background: url(/images/w2.jpg);
+  background-image: linear-gradient(315deg, #ccd6e6 0%, #f0cbd1 74%);
   background-size: 100% 100%;
 }
 
