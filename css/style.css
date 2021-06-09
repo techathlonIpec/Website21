@@ -1001,7 +1001,6 @@ footer {
 
 
 .title-two {
-  background-color: #f2ebd8;
   z-index: -1;
   position: absolute;
   left: 50%;
@@ -1010,6 +1009,7 @@ footer {
   font-family: "Montserrat";
   text-align: center;
   width: 100%;
+  background-size: 100% 100%;
 }
 
 
