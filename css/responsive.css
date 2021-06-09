@@ -10,11 +10,11 @@
     width: 100% !important;
   }
 
-  #hero-text > img {
+  #hero-text .logoE > img {
     height: 100px !important;
   }
 
-  header #landing-logo {
+  header .landing-logo {
     height: 25px !important;
     width: 25px !important;
   }
