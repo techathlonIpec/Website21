@@ -14,7 +14,7 @@
     height: 100px !important;
   }
 
-  header #hero-text .logo-landing {
+  #hero-text .logo-landing > img {
     height: 25px !important;
     }
 
