@@ -14,23 +14,22 @@
     height: 100px !important;
   }
 
-  header .landing-logo {
-    height: 25px !important;
-    width: 25px !important;
-  }
+  header .logo-landing {
+    height: 50px !important;
+    }
 
   header #hero-text {
     height: 120vh;
   }
 
   header #hero-text h1 {
-    font-size: 35px;
+    font-size: 40px;
   }
   header #hero-text p {
-    font-size: 25px;
+    font-size: 20px;
   }
   header #hero-text .hero-small {
-    font-size: 15px;
+    font-size: 12px;
   }
   header #hero-text .hero-medium {
     font-size: 18px;
