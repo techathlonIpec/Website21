@@ -14,10 +14,10 @@
     height: 100px !important;
   }
 
- .logo-landing > img {
+  .logo-landing > img {
     height: 120px !important;
     padding-top: 3%;
-    }
+  }
 
   header #hero-text {
     height: 120vh;
@@ -52,8 +52,8 @@
     padding: 10px 25px;
     font-size: 14px;
   }
-  .title-two{
-    background-size:cover;
+  .title-two {
+    background-size: cover;
   }
   #events {
     height: 90vh;
@@ -93,14 +93,15 @@
   }
 
   /* TEAM CARDS */
-  .card{
+  .card {
     width: 250px;
     height: 300px;
   }
-  .card h2,.card h2>small{
+  .card h2,
+  .card h2 > small {
     font-size: 20px !important;
   }
-  .card cite{
+  .card cite {
     font-size: 13px;
     padding: 10px;
   }
@@ -168,37 +169,41 @@
     transform: translateX(-106%);
   }
 
-  #speciawar,#ctf{
+  #speciawar,
+  #ctf {
     background-color: #f2ebd8;
     padding: 5% 2%;
     text-align: center;
   }
-  
-  #vividly,#infomaze{
+
+  #vividly,
+  #infomaze {
     padding: 5% 5%;
     text-align: center;
   }
 
-  #speciawar p:not(.section-title), #ctf p:not(.section-title),#vividly p:not(.section-title), #infomaze p:not(.section-title){
+  #speciawar p:not(.section-title),
+  #ctf p:not(.section-title),
+  #vividly p:not(.section-title),
+  #infomaze p:not(.section-title) {
     font-size: 12px;
   }
 
-  #prizes{
+  #prizes {
     padding: 5% 2%;
   }
-  .the-box{
+  .the-box {
     height: 150px;
     width: 150px;
     margin: 10px;
   }
-  .prize-amount{
+  .prize-amount {
     font-size: 20px;
   }
-  .prize-position{
+  .prize-position {
     font-size: 14px;
   }
 }
-
 
 /* footer */
 @media screen and (max-width: 768px) {
@@ -206,7 +211,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:min-content;
+    width: min-content;
   }
 
   .container-two {
@@ -225,6 +230,18 @@
   }
 }
 
+@media screen and (max-width: 1900px) {
+  header #hero-text {
+    margin-top: 3.8%;
+  }
+  header .logo-landing {
+    padding-top: 12%;
+  }
+  /* header #hero-text {
+    
+  } */
 
-
-
+  canvas {
+    height: 1000px;
+  }
+}

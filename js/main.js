@@ -132,8 +132,3 @@ function update() {
 update();
 
 AOS.init();
-
-
-
-
-
