@@ -11,11 +11,12 @@
   }
 
   #hero-text > img {
-    height: 75px !important;
+    height: 100px !important;
   }
 
   header #landing-logo {
-    height: 75px !important;
+    height: 50% !important;
+    width: 50% !important;
   }
 
   header #hero-text {
