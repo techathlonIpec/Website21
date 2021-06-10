@@ -1,11 +1,11 @@
 .body {
-  background-color: #F2EBD8;
+  background-color: #f2ebd8;
   display: flex !important;
   justify-content: center !important;
   font-family: "Open Sans", sans-serif;
   padding: 5rem 1.5rem;
 }
-div.loading{
+div.loading {
   position: fixed;
   top: 0;
   left: 0;
@@ -171,8 +171,7 @@ div.loading{
   font-weight: 600;
 }
 
-
-.header{
+.header {
   height: 8rem;
   margin-bottom: 1rem;
   background-color: #000;
@@ -182,7 +181,7 @@ div.loading{
   border-radius: 10px;
 }
 
-.headerText{
+.headerText {
   color: #fff;
   text-align: center;
   font-weight: 900;
@@ -190,9 +189,9 @@ div.loading{
   font-size: 1.5rem;
 }
 
-.headerImage{
+.headerImage {
   flex: 1;
-  background: linear-gradient(#364D79, #14213a);
+  background: linear-gradient(#364d79, #14213a);
   height: 100%;
   display: none;
   width: 100%;
@@ -210,11 +209,17 @@ div.loading{
   justify-content: center !important;
 }
 
-.fieldsBox{
+.fieldsBox {
   width: 100%;
   margin: 0 0;
+}
 
-  
+.paymentDetails {
+  font-weight: 400;
+  padding: 20px 20px 0px 20px;
+}
+.paymentDetails > ul > li {
+  margin-left: 30px;
 }
 .formField {
   height: auto;
@@ -227,9 +232,9 @@ div.loading{
 .title {
   height: 11px;
   text-align: left;
-  font-size: 16px!important;
+  font-size: 16px !important;
   font-family: "Fira Sans", sans-serif;
-  margin: 0  0 15px 3px;
+  margin: 0 0 15px 3px;
   color: #000000;
   opacity: 1;
 }
@@ -242,20 +247,18 @@ div.loading{
   border-radius: 3px;
   border: 1px solid #a7bbc7;
   font-size: 1rem;
-
 }
-.nestedInput{
+.nestedInput {
   display: flex;
   justify-content: space-between;
 }
-.in{
+.in {
   width: 49%;
 }
 
-
 .Button {
   height: 40px !important;
-  background: #F34559 0% 0% no-repeat padding-box !important;
+  background: #f34559 0% 0% no-repeat padding-box !important;
   border-radius: 4px !important;
   opacity: 1;
   border: none;
@@ -268,25 +271,25 @@ div.loading{
   text-align: center;
 }
 
-.subtitle{
+.subtitle {
   height: 11px;
   text-align: left;
-  font-size: 16px!important;
+  font-size: 16px !important;
   font-family: "Fira Sans", sans-serif;
-  margin: 0  0 15px 3px;
+  margin: 0 0 15px 3px;
   color: #000000;
   text-transform: uppercase;
   opacity: 1;
   flex: 1;
 }
-.subTeam{
+.subTeam {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  
 }
 
-.errorNotification,.successNotification{
+.errorNotification,
+.successNotification {
   margin-top: 10px;
   position: fixed;
   text-transform: capitalize;
@@ -302,144 +305,134 @@ div.loading{
   background-color: #ef4f4f;
   border-radius: 5px;
 }
-.successNotification{
+.successNotification {
   background-color: #22bb33;
 }
 
-
-
-
 @media screen and(max-width:1200px) {
+  .headerImage {
+    height: 100%;
+    width: 60%;
+  }
+  .formBox {
+    width: 100% !important;
+  }
 
-.headerImage{
-  height: 100%;
-  width: 60%;
-}
-.formBox {
-  width: 100% !important;
-}
-
-.errorNotification,.successNotification{
-  padding: 0 1rem;
- 
-}
-
+  .errorNotification,
+  .successNotification {
+    padding: 0 1rem;
+  }
 }
 @media screen and(max-width:950px) {
-
   .formBox {
     width: 70%;
   }
   .formBox {
     width: 80%;
   }
-  .headerImage{
+  .headerImage {
     height: 100%;
     width: 50%;
   }
-  .headerText{
+  .headerText {
     padding: 1rem;
   }
 
-  .errorNotification,.successNotification{
+  .errorNotification,
+  .successNotification {
     left: 30%;
     width: 40vw;
     padding: 0 1.5rem;
   }
 }
 @media screen and(max-width:650px) {
+  .formBox {
+    width: 80%;
+  }
+  .subTeam {
+    width: 80%;
+    display: block;
+  }
 
-    .formBox {
-      width: 80%;
-    }
-    .subTeam{
-      width: 80%;
-    display: block;  
-    }
-  
-    .headerImage{
-      height: 100%;
-      width: 50%;
-    }
-    .errorNotification,.successNotification{
-      left: 25%;
-      width: 50vw;
-    }
+  .headerImage {
+    height: 100%;
+    width: 50%;
+  }
+  .errorNotification,
+  .successNotification {
+    left: 25%;
+    width: 50vw;
+  }
 }
 
 @media screen and(max-width:550px) {
-      .formBox {
-        width: 70%;
-      }
-    
-      .headerImage{
-        display: none;
-      }
-      .header{
-        height: 9rem;
-      }
+  .formBox {
+    width: 70%;
+  }
 
-      .nestedInput{
-        display: block;
-      }
-      .in{
-        width: 100%;
-        margin: 5px 0;
-      }
-      .subTeam{
-        display: block;  
-        width: 85%;
-      }
+  .headerImage {
+    display: none;
+  }
+  .header {
+    height: 9rem;
+  }
 
+  .nestedInput {
+    display: block;
+  }
+  .in {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .subTeam {
+    display: block;
+    width: 85%;
+  }
 }
 @media screen and(max-width:450px) {
-
-  .header{
+  .header {
     height: 9rem;
     padding: 1rem;
-    
   }
   .formBox {
     width: 85%;
   }
-  .fieldsBox{
+  .fieldsBox {
     width: 90%;
   }
 
-  .subTeam{
-    display: block; 
-    width: 95%; 
+  .subTeam {
+    display: block;
+    width: 95%;
   }
-
 }
 
 @media screen and(max-width:350px) {
-  .header{
+  .header {
     height: 4rem;
   }
-  
+
   .inputField {
     padding: 2px 10px;
     font-size: 12px;
-  
   }
-  .title{
+  .title {
     font-size: 13px !important;
   }
   .formBox {
     width: 90%;
   }
-  .fieldsBox{
+  .fieldsBox {
     width: 90%;
   }
-  .subTeam{
-    display: block; 
-    width: 100%; 
+  .subTeam {
+    display: block;
+    width: 100%;
   }
 
-  .errorNotification,.successNotification{
+  .errorNotification,
+  .successNotification {
     left: 20%;
     width: 60vw;
   }
-
 }
