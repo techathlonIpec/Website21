@@ -37,7 +37,7 @@
   }
   #content .info {
     background: white;
-    padding: 70px 0 70px 0;
+    padding: 100px 0 70px 0;
   }
   #content .info > p:first-child {
     font-size: 20px;
@@ -227,6 +227,13 @@
   }
   .modal-window > div {
     width: 200px;
+  }
+
+  header #scroll {
+    position: absolute;
+    bottom: -25%;
+    left: 0;
+    right: 0;
   }
 }
 
