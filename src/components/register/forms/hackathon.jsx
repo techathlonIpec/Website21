@@ -3,6 +3,7 @@ import classes from "../register.module.scss";
 import QueueAnim from 'rc-queue-anim';
 import axios from "axios";
 import { Col, Row, Input, Button } from "antd";
+import Payment from './payment.jpeg'
 
 
 export default function Hachathon() {
@@ -180,16 +181,18 @@ export default function Hachathon() {
                         {/* animation */}
                         <div className={classes.fieldsBox}>
                             <p className={classes.paymentDetails}>
-                                Kindly make your payment before filling this form.
+
+                                <ul>
+                                    Kindly make your payment before filling this form.
                                 <br />
                                 The Payment Details are as follows:
-                                <ul>
                                     <li>Name: INDERPRASTHA ENGINEERING COLLEGE</li>
                                     <li>Bank Name: HDFC BANK LTD.</li>
                                     <li>Address: D-44 RDC, RajNagar, Ghaziabad</li>
                                     <li>Account No: 50100087471211</li>
                                     <li>RTGS/IFSC Code: HDFC0000153</li>
                                 </ul>
+                                <img src={Payment} className={classes.mobileHidden} alt="" height="400px" />
                             </p>
                             <QueueAnim delay={300} className="queue-simple">
                                 <div key='a' className={classes.formField}>

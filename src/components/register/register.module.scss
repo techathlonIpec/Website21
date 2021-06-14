@@ -215,6 +215,9 @@ div.loading {
 }
 
 .paymentDetails {
+  display: flex;
+  justify-content: space-around;
+  line-height: 3;
   font-weight: 400;
   padding: 20px 20px 0px 20px;
 }
@@ -310,6 +313,9 @@ div.loading {
 }
 
 @media screen and(max-width:1200px) {
+  .mobileHidden {
+    display: none;
+  }
   .headerImage {
     height: 100%;
     width: 60%;
