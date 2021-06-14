@@ -113,6 +113,9 @@ export default function Vividly() {
                                     <li>Address: D-44 RDC, RajNagar, Ghaziabad</li>
                                     <li>Account No: 50100087471211</li>
                                     <li>RTGS/IFSC Code: HDFC0000153</li>
+                                    For Payment related Queries/grievance contact: <br />
+                                    Ajay Pal: (+91)8586962230 <br />
+                                    Anubhav Chitragupta: (+91)8172910107
                                 </ul>
                                 <img src={Payment} className={classes.mobileHidden} alt="" height="400px" />
 
