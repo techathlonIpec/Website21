@@ -19,6 +19,11 @@
     padding-top: 3%;
   }
 
+  .sponsorsImg > img {
+    width: 120px;
+    padding-top: 3%;
+  }
+
   header #hero-text {
     height: 120vh;
   }

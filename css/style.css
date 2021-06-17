@@ -472,6 +472,14 @@ header #scroll {
   background-size: 100% 100%;
 }
 
+#sponsors {
+  background-image: linear-gradient(315deg, #809fce 0%, #df97a1 74%);
+  padding: 2%;
+}
+.sponsorsImg {
+  padding-top: 5%;
+}
+
 #schedule {
   text-align: center;
   padding: 5% 10%;
@@ -1090,3 +1098,4 @@ footer {
   z-index: 1100;
   background-color: black;
 }
+
