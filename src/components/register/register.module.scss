@@ -13,6 +13,28 @@ div.loading {
   height: 100%;
   background-color: rgba(16, 16, 16, 0.5);
 }
+.outer{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  height: 80%;
+  padding: 4rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image{
+  flex: 1;
+  height: 100%;
+  width:90%;
+  border-radius: 10px;
+}
 
 @-webkit-keyframes uil-ring-anim {
   0% {

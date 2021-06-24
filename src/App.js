@@ -14,13 +14,14 @@ class App extends React.Component {
 
     return (
       <div>
-        <Router>
+        {/* <Router>
         <Hackathon path='/hackathon'/>
         <Infomaze path='/infomaze'/>
         <SpeciaWar path='/speciawar'/>
         <Vividly path='/vividly'/>
         <CTF path='/ctf'/>
-      </Router>
+      </Router> */}
+      <Hackathon />
       </div>
     );
   }
