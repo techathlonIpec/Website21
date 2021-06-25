@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './App.css'
+import axios from 'axios';
+import { useState } from 'react'
 function App() {
+  const [password, setPassword] = useState('');
+  const [flag, setFlag] = useState('');
+  let login = () => {
+    axios.post("https://secure-value-at-ctf.herokuapp.com/login", {
+      password: password
+    })
+      .then(response => {
+        if (response.data.done) {
+          setFlag(response.data.flag)
+        }
+        else {
+          setFlag("Wrong Password")
+        }
+      })
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <br />
+      <br />
+      <br /><br /><br />
+      Enter Password
+      <input type="password" value={password} onChange={event => { setPassword(event.target.value) }} />
+      <input type="button" value="Submit" onClick={login} />
+      <br />
+      {flag}
     </div>
+
   );
 }
 
